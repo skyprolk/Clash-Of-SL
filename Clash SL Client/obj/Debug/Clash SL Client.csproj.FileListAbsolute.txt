@@ -1,0 +1,7 @@
+D:\Clash of SL\Source Code\COSS\Clash SL Client\obj\Debug\Clash SL Client.csprojAssemblyReference.cache
+D:\Clash of SL\Source Code\COSS\Clash SL Client\obj\Debug\Clash SL Client.csproj.CoreCompileInputs.cache
+D:\Clash of SL\Source Code\COSS\Clash SL Client\bin\Debug\Clash SL Client.exe.config
+D:\Clash of SL\Source Code\COSS\Clash SL Client\bin\Debug\Clash SL Client.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client\bin\Debug\Clash SL Client.pdb
+D:\Clash of SL\Source Code\COSS\Clash SL Client\obj\Debug\Clash SL Client.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client\obj\Debug\Clash SL Client.pdb
