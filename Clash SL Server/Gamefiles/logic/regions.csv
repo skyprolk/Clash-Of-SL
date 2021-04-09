@@ -1,0 +1,268 @@
+"Name","TID","DisplayName","IsCountry","HS"
+"String","String","String","boolean","boolean"
+"_EU",,"Europe","FALSE",
+"_NA",,"North America","FALSE",
+"_SA",,"South America","FALSE",
+"_AS",,"Asia","FALSE",
+"_AU",,"Australia","FALSE",
+"_AF",,"Africa","FALSE",
+"_INT","TID_REGION_INT","International","FALSE",
+"AF",,"Afghanistan","TRUE",
+"AX",,"Åland Islands","TRUE",
+"AL",,"Albania ","TRUE","TRUE"
+"DZ",,"Algeria","TRUE","TRUE"
+"AS",,"American Samoa","TRUE",
+"AD",,"Andorra","TRUE",
+"AO",,"Angola","TRUE",
+"AI",,"Anguilla","TRUE",
+"AQ",,"Antarctica","TRUE",
+"AG",,"Antigua and Barbuda","TRUE",
+"AR",,"Argentina","TRUE",
+"AM",,"Armenia","TRUE","TRUE"
+"AW",,"Aruba","TRUE",
+"AC",,"Ascension Island","TRUE",
+"AU",,"Australia","TRUE",
+"AT",,"Austria","TRUE",
+"AZ",,"Azerbaijan","TRUE","TRUE"
+"BS",,"Bahamas","TRUE",
+"BH",,"Bahrain","TRUE",
+"BD",,"Bangladesh","TRUE","TRUE"
+"BB",,"Barbados","TRUE",
+"BY",,"Belarus","TRUE","TRUE"
+"BE",,"Belgium","TRUE",
+"BZ",,"Belize","TRUE",
+"BJ",,"Benin","TRUE",
+"BM",,"Bermuda","TRUE",
+"BT",,"Bhutan","TRUE","TRUE"
+"BO",,"Bolivia","TRUE","TRUE"
+"BA",,"Bosnia and Herzegovina","TRUE","TRUE"
+"BW",,"Botswana","TRUE",
+"BV",,"Bouvet Island","TRUE",
+"BR",,"Brazil","TRUE",
+"IO",,"British Indian Ocean Territory","TRUE",
+"VG",,"British Virgin Islands","TRUE",
+"BN",,"Brunei","TRUE",
+"BG",,"Bulgaria","TRUE","TRUE"
+"BF",,"Burkina Faso","TRUE",
+"BI",,"Burundi","TRUE","TRUE"
+"KH",,"Cambodia","TRUE","TRUE"
+"CM",,"Cameroon","TRUE",
+"CA",,"Canada","TRUE",
+"IC ",,"Canary Islands","TRUE",
+"CV",,"Cape Verde","TRUE","TRUE"
+"BQ",,"Caribbean Netherlands","TRUE",
+"KY",,"Cayman Islands","TRUE",
+"CF",,"Central African Republic","TRUE",
+"EA ",,"Ceuta and Melilla","TRUE",
+"TD",,"Chad","TRUE",
+"CL",,"Chile","TRUE",
+"CN",,"China","TRUE",
+"CX",,"Christmas Island","TRUE","TRUE"
+"CC",,"Cocos (Keeling) Islands","TRUE",
+"CO",,"Colombia","TRUE","TRUE"
+"KM",,"Comoros","TRUE",
+"CG",,"Congo (DRC)","TRUE",
+"CD",,"Congo (Republic)","TRUE",
+"CK",,"Cook Islands","TRUE",
+"CR",,"Costa Rica","TRUE",
+"CI",,"Côte d’Ivoire","TRUE",
+"HR",,"Croatia","TRUE","TRUE"
+"CU",,"Cuba","TRUE",
+"CW",,"Curaçao","TRUE",
+"CY",,"Cyprus","TRUE",
+"CZ",,"Czech Republic","TRUE",
+"DK",,"Denmark","TRUE",
+"DG ",,"Diego Garcia","TRUE",
+"DJ",,"Djibouti","TRUE",
+"DM",,"Dominica","TRUE",
+"DO",,"Dominican Republic","TRUE",
+"EC",,"Ecuador","TRUE","TRUE"
+"EG",,"Egypt","TRUE","TRUE"
+"SV",,"El Salvador","TRUE","TRUE"
+"GQ",,"Equatorial Guinea","TRUE",
+"ER",,"Eritrea","TRUE","TRUE"
+"EE",,"Estonia","TRUE","TRUE"
+"ET",,"Ethiopia","TRUE",
+"FK",,"Falkland Islands","TRUE",
+"FO",,"Faroe Islands","TRUE",
+"FJ",,"Fiji","TRUE",
+"FI",,"Finland","TRUE",
+"FR",,"France","TRUE",
+"GF",,"French Guiana","TRUE",
+"PF",,"French Polynesia","TRUE",
+"TF",,"French Southern Territories","TRUE",
+"GA",,"Gabon","TRUE",
+"GM",,"Gambia","TRUE",
+"GE",,"Georgia","TRUE","TRUE"
+"DE",,"Germany","TRUE",
+"GH",,"Ghana","TRUE",
+"GI",,"Gibraltar","TRUE",
+"GR",,"Greece","TRUE",
+"GL",,"Greenland","TRUE",
+"GD",,"Grenada","TRUE",
+"GP",,"Guadeloupe","TRUE",
+"GU",,"Guam","TRUE",
+"GT",,"Guatemala","TRUE","TRUE"
+"GG",,"Guernsey","TRUE",
+"GN",,"Guinea","TRUE",
+"GW",,"Guinea-Bissau","TRUE","TRUE"
+"GY",,"Guyana","TRUE",
+"HT",,"Haiti","TRUE",
+"HM",,"Heard & McDonald Islands","TRUE",
+"HN",,"Honduras","TRUE","TRUE"
+"HK",,"Hong Kong","TRUE",
+"HU",,"Hungary","TRUE",
+"IS",,"Iceland","TRUE",
+"IN",,"India","TRUE","TRUE"
+"ID",,"Indonesia","TRUE","TRUE"
+"IR",,"Iran","TRUE","TRUE"
+"IQ",,"Iraq","TRUE","TRUE"
+"IE",,"Ireland","TRUE",
+"IM",,"Isle of Man","TRUE",
+"IL",,"Israel","TRUE",
+"IT",,"Italy","TRUE",
+"JM",,"Jamaica","TRUE",
+"JP",,"Japan","TRUE",
+"JE",,"Jersey","TRUE",
+"JO",,"Jordan","TRUE","TRUE"
+"KZ",,"Kazakhstan","TRUE","TRUE"
+"KE",,"Kenya","TRUE",
+"KI",,"Kiribati","TRUE",
+"XK ",,"Kosovo","TRUE",
+"KW",,"Kuwait","TRUE",
+"KG",,"Kyrgyzstan","TRUE","TRUE"
+"LA",,"Laos","TRUE","TRUE"
+"LV",,"Latvia","TRUE","TRUE"
+"LB",,"Lebanon","TRUE",
+"LS",,"Lesotho","TRUE",
+"LR",,"Liberia","TRUE",
+"LY",,"Libya","TRUE","TRUE"
+"LI",,"Liechtenstein","TRUE",
+"LT",,"Lithuania","TRUE","TRUE"
+"LU",,"Luxembourg","TRUE",
+"MO",,"Macau","TRUE",
+"MK",,"Macedonia (FYROM)","TRUE","TRUE"
+"MG",,"Madagascar","TRUE",
+"MW",,"Malawi","TRUE",
+"MY",,"Malaysia","TRUE",
+"MV",,"Maldives","TRUE",
+"ML",,"Mali","TRUE",
+"MT",,"Malta","TRUE",
+"MH",,"Marshall Islands","TRUE",
+"MQ",,"Martinique","TRUE",
+"MR",,"Mauritania","TRUE","TRUE"
+"MU",,"Mauritius","TRUE",
+"YT",,"Mayotte","TRUE",
+"MX",,"Mexico","TRUE",
+"FM",,"Micronesia","TRUE",
+"MD",,"Moldova","TRUE","TRUE"
+"MC",,"Monaco","TRUE",
+"MN",,"Mongolia","TRUE","TRUE"
+"ME",,"Montenegro","TRUE","TRUE"
+"MS",,"Montserrat","TRUE",
+"MA",,"Morocco","TRUE",
+"MZ",,"Mozambique","TRUE",
+"MM",,"Myanmar (Burma)","TRUE","TRUE"
+"NA",,"Namibia","TRUE",
+"NR",,"Nauru","TRUE",
+"NP",,"Nepal","TRUE","TRUE"
+"NL",,"Netherlands","TRUE",
+"NC",,"New Caledonia","TRUE",
+"NZ",,"New Zealand","TRUE",
+"NI",,"Nicaragua","TRUE","TRUE"
+"NE",,"Niger","TRUE",
+"NG",,"Nigeria","TRUE",
+"NU",,"Niue","TRUE",
+"NF",,"Norfolk Island","TRUE","TRUE"
+"KP",,"North Korea","TRUE","TRUE"
+"MP",,"Northern Mariana Islands","TRUE",
+"NO",,"Norway","TRUE",
+"OM",,"Oman","TRUE",
+"PK",,"Pakistan","TRUE","TRUE"
+"PW",,"Palau","TRUE",
+"PS",,"Palestine","TRUE","TRUE"
+"PA",,"Panama","TRUE","TRUE"
+"PG",,"Papua New Guinea","TRUE",
+"PY",,"Paraguay","TRUE","TRUE"
+"PE",,"Peru","TRUE",
+"PH",,"Philippines","TRUE","TRUE"
+"PN",,"Pitcairn Islands","TRUE",
+"PL",,"Poland","TRUE",
+"PT",,"Portugal","TRUE",
+"PR",,"Puerto Rico","TRUE",
+"QA",,"Qatar","TRUE",
+"RE",,"Réunion","TRUE",
+"RO",,"Romania","TRUE",
+"RU",,"Russia","TRUE","TRUE"
+"RW",,"Rwanda","TRUE",
+"BL",,"Saint Barthélemy","TRUE",
+"SH ",,"Saint Helena","TRUE","TRUE"
+"KN",,"Saint Kitts and Nevis","TRUE",
+"LC",,"Saint Lucia","TRUE",
+"MF",,"Saint Martin","TRUE",
+"PM",,"Saint Pierre and Miquelon","TRUE",
+"WS",,"Samoa","TRUE",
+"SM",,"San Marino","TRUE",
+"ST",,"São Tomé and Príncipe","TRUE",
+"SA",,"Saudi Arabia","TRUE",
+"SN",,"Senegal","TRUE",
+"RS",,"Serbia","TRUE","TRUE"
+"SC",,"Seychelles","TRUE",
+"SL",,"Sierra Leone","TRUE",
+"SG",,"Singapore","TRUE",
+"SX",,"Sint Maarten","TRUE",
+"SK",,"Slovakia","TRUE",
+"SI",,"Slovenia","TRUE","TRUE"
+"SB",,"Solomon Islands","TRUE",
+"SO",,"Somalia","TRUE",
+"ZA",,"South Africa","TRUE",
+"KR",,"South Korea","TRUE",
+"SS",,"South Sudan","TRUE",
+"ES",,"Spain","TRUE",
+"LK",,"Sri Lanka","TRUE","TRUE"
+"VC",,"St. Vincent & Grenadines","TRUE",
+"SD",,"Sudan","TRUE","TRUE"
+"SR",,"Suriname","TRUE",
+"SJ",,"Svalbard and Jan Mayen","TRUE",
+"SZ",,"Swaziland","TRUE",
+"SE",,"Sweden","TRUE",
+"CH",,"Switzerland","TRUE",
+"SY",,"Syria","TRUE","TRUE"
+"TW",,"Taiwan","TRUE",
+"TJ",,"Tajikistan","TRUE","TRUE"
+"TZ",,"Tanzania","TRUE",
+"TH",,"Thailand","TRUE","TRUE"
+"TL",,"Timor-Leste","TRUE",
+"TG",,"Togo","TRUE",
+"TK",,"Tokelau","TRUE","TRUE"
+"TO",,"Tonga","TRUE",
+"TT",,"Trinidad and Tobago","TRUE",
+"TA ",,"Tristan da Cunha","TRUE",
+"TN",,"Tunisia","TRUE","TRUE"
+"TR",,"Turkey","TRUE",
+"TM",,"Turkmenistan","TRUE","TRUE"
+"TC",,"Turks and Caicos Islands","TRUE",
+"TV",,"Tuvalu","TRUE","TRUE"
+"UM",,"U.S. Outlying Islands","TRUE",
+"VI",,"U.S. Virgin Islands","TRUE",
+"UG",,"Uganda","TRUE",
+"UA",,"Ukraine","TRUE","TRUE"
+"AE",,"United Arab Emirates","TRUE",
+"GB",,"United Kingdom","TRUE",
+"US",,"United States","TRUE",
+"UY",,"Uruguay","TRUE",
+"UZ",,"Uzbekistan","TRUE","TRUE"
+"VU",,"Vanuatu","TRUE",
+"VA",,"Vatican City","TRUE","TRUE"
+"VE",,"Venezuela","TRUE","TRUE"
+"VN",,"Vietnam","TRUE","TRUE"
+"WF",,"Wallis and Futuna","TRUE",
+"EH",,"Western Sahara","TRUE",
+"YE",,"Yemen","TRUE","TRUE"
+"ZM",,"Zambia","TRUE",
+"ZW",,"Zimbabwe","TRUE",
+"CUSTOM1","TID_REGION_CUSTOM1",,"FALSE",
+"CUSTOM2","TID_REGION_CUSTOM2",,"FALSE",
+"CUSTOM3","TID_REGION_CUSTOM3",,"FALSE",
+"CUSTOM4","TID_REGION_CUSTOM4",,"FALSE",
+"CUSTOM5","TID_REGION_CUSTOM5",,"FALSE",

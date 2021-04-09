@@ -1,0 +1,30 @@
+"Name","Description","HasEvenSpaceCharacters","UsedSystemFont","HelpshiftSDKLanguage","HelpshiftSDKLanguageAndroid","SortOrder","TestLanguage","TestExcludes"
+"String","String","boolean","String","String","String","int","boolean","String"
+"EN",,,,"en",,1,,
+"FR",,,,"fr",,2,,
+"DE",,,,"de",,3,,
+"ES",,,,"es",,4,,
+"IT",,,,"it",,5,,
+"NL",,,,"nl",,6,,
+"NO",,,,,,7,,
+"PT",,,,"pt","pt_Br",8,,
+"TR",,,,"tr",,9,,
+"CN",,"TRUE","STHeitiSC-Medium","zh-Hans","zh_CN",11,,
+"JP",,"TRUE","HiraKakuProN-W6","ja",,13,,
+"KR",,"TRUE",,"ko",,14,,
+"RU",,,,"ru",,10,,
+"TEXT","Longest text",,,"zh-hans","zh_CN",1000,"TRUE","AR"
+,,,,,,,,"FA"
+"WORD","Longest word",,,"cn","zh_TW",1001,"TRUE","AR"
+,,,,,,,,"FA"
+"DOUBLE","Double String",,,"zh-Hans","zh_CN",1002,"TRUE",
+"EMPTY","Empty texts",,,"ko","ko",1003,"TRUE",
+"CNT",,"TRUE","STHeitiSC-Medium","zh-Hant","zh_TW",12,,
+"AR",,,,"ar",,15,,
+"FA",,,,,,16,,
+"ID",,,,,,17,"TRUE",
+"MS",,,,,,18,"TRUE",
+"TL",,,,,,19,"TRUE",
+"VI",,,,,,20,"TRUE",
+"DOUBLEDOUBLE","Double Double String",,,"zh-Hans","zh_CN",1004,"TRUE",
+"QUADRUPLE","Quad String",,,"zh-Hans","zh_CN",1005,"TRUE",

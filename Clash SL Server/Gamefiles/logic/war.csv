@@ -1,0 +1,13 @@
+"Name","TeamSize","PreparationMinutes","WarMinutes","DisableProduction"
+"String","int","int","int","boolean"
+"Test_1",1,5,15,"true"
+"Test_2",2,5,15,"true"
+"Test_3",3,5,15,"true"
+"Test_4",5,5,15,"true"
+"Small_1",10,1380,1440,
+"Small_2",15,1380,1440,
+"Medium_1",20,1380,1440,
+"Medium_2",25,1380,1440,
+"Large_1",30,1380,1440,
+"Epic_1",40,1380,1440,
+"Epic_3",50,1380,1440,
