@@ -1,0 +1,7 @@
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\bin\x64\Release\Ultrapower Client Patcher.exe.config
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\bin\x64\Release\Ultrapower Client Patcher.exe
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\bin\x64\Release\Ultrapower Client Patcher.pdb
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\obj\x64\Release\Ultrapowa Client Patcher.csprojAssemblyReference.cache
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\obj\x64\Release\Ultrapowa Client Patcher.csproj.CoreCompileInputs.cache
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\obj\x64\Release\Ultrapower Client Patcher.exe
+C:\Users\Naix\Desktop\Ultrapower v0.7.3.2B5\Internal\Ultrapower-0.7.3.2B5\Ultrapower Client Patcher\obj\x64\Release\Ultrapower Client Patcher.pdb

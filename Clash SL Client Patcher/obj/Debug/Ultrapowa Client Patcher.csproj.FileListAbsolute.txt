@@ -1,0 +1,7 @@
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Debug\Ultrapower Client Patcher.exe.config
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Debug\Ultrapower Client Patcher.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Debug\Ultrapower Client Patcher.pdb
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Debug\Ultrapowa Client Patcher.csprojAssemblyReference.cache
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Debug\Ultrapowa Client Patcher.csproj.CoreCompileInputs.cache
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Debug\Ultrapower Client Patcher.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Debug\Ultrapower Client Patcher.pdb

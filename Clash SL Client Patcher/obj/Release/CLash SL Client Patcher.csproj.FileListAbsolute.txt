@@ -1,0 +1,12 @@
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.exe.config
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.pdb
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Release\CLash SL Client Patcher.csproj.CoreCompileInputs.cache
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Release\Clash SL Client Patcher.exe
+D:\Clash of SL\Source Code\COSS\Clash SL Client Patcher\obj\Release\Clash SL Client Patcher.pdb
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.exe.config
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.exe
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\bin\Release\Clash SL Client Patcher.pdb
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\obj\Release\Clash SL Client Patcher.csproj.CoreCompileInputs.cache
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\obj\Release\Clash SL Client Patcher.exe
+D:\Clash of SL\Source Code\CSS\Clash SL Client Patcher\obj\Release\Clash SL Client Patcher.pdb
