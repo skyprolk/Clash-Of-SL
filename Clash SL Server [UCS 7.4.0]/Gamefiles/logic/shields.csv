@@ -1,0 +1,6 @@
+"Name","TID","InfoTID","TimeH","GuardTimeH","Diamonds","IconSWF","IconExportName","CooldownS","LockedAboveScore"
+"String","String","String","int","int","int","String","String","int","int"
+"Guard 2H","TID_SHOP_GUARD_2H","TID_GUARD_INFO",0,2,10,"sc/shop.sc","icon_shield_4",82800,
+"Shield 1D","TID_SHOP_SHIELD_1D","TID_SHIELD_INFO",24,0,100,"sc/shop.sc","icon_shield_1",432000,
+"Shield 2D","TID_SHOP_SHIELD_2D","TID_SHIELD_INFO",48,0,150,"sc/shop.sc","icon_shield_2",864000,
+"Shield 7D","TID_SHOP_SHIELD_7D","TID_SHIELD_INFO",168,0,250,"sc/shop.sc","icon_shield_3",3024000,4700
