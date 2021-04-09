@@ -1,0 +1,38 @@
+﻿/*
+ * Program : Clash Of SL Server
+ * Description : A C# Writted 'Clash of SL' Server Emulator !
+ *
+ * Authors:  Sky Tharusha <Founder at Sky Production>,
+ *           And the Official DARK Developement Team
+ *
+ * Copyright (c) 2021  Sky Production
+ * All Rights Reserved.
+ */
+
+using System.IO;
+using CSS.Helpers;
+
+namespace CSS.PacketProcessing.Commands
+{
+    internal class CancelUpgradeUnitCommand : Command
+    {
+        #region Public Constructors
+
+        public CancelUpgradeUnitCommand(CoCSharpPacketReader br)
+        {
+            /*
+            BuildingId = br.ReadUInt32WithEndian(); //buildingId - 0x1DCD6500;
+            Unknown1 = br.ReadUInt32WithEndian();
+            */
+        }
+
+        #endregion Public Constructors
+
+        #region Public Properties
+
+        public uint BuildingId { get; set; }
+        public uint Unknown1 { get; set; }
+
+        #endregion Public Properties
+    }
+}
