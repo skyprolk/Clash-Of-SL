@@ -1,0 +1,1058 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Data.HashFunction.Core</name>
+    </assembly>
+    <members>
+        <member name="T:System.Data.HashFunction.HashAlgorithmWrapper">
+            <summary>
+            Implementation of <see cref="T:System.Data.HashFunction.IHashFunction"/> that wraps cryptographic hash functions known as <see cref="T:System.Security.Cryptography.HashAlgorithm"/>.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.#ctor(System.Security.Cryptography.HashAlgorithm)">
+            <remarks>
+            Assumes ownership of the <see cref="T:System.Security.Cryptography.HashAlgorithm"/> instance and disposes it when the <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper"/> is disposed.
+            </remarks>
+            <inheritdoc cref="M:System.Data.HashFunction.HashAlgorithmWrapper.#ctor(System.Security.Cryptography.HashAlgorithm,System.Boolean)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.#ctor(System.Security.Cryptography.HashAlgorithm,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper"/> class.
+            </summary>
+            <param name="hashAlgorithm">Instance of <see cref="T:System.Security.Cryptography.HashAlgorithm"/> to use for hashing.</param>
+            <param name="ownsInstance">If true, the instance of <see cref="T:System.Security.Cryptography.HashAlgorithm"/> passed will be disposed when the HashAlgorithmWrapper instance is disposed.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.Dispose">
+            <summary>
+            Disposes <see cref="T:System.Security.Cryptography.HashAlgorithm"/> passed in constructor if it is owned by this <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper"/>.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.Dispose(System.Boolean)">
+            <summary>
+            Disposes <see cref="T:System.Security.Cryptography.HashAlgorithm"/> passed in constructor if it is owned by this <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper"/>.
+            </summary>
+            <param name="disposing">If false, call is assumed to be from the destructor.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.ComputeHash(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper.ComputeHash(System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="P:System.Data.HashFunction.HashAlgorithmWrapper.HashSize">
+            <inheritdoc/>
+        </member>
+        <member name="T:System.Data.HashFunction.HashAlgorithmWrapper`1">
+            <summary>
+            Generic implementation of <see cref="T:System.Data.HashFunction.IHashFunction"/> that wraps cryptographic hash functions known as <see cref="T:System.Security.Cryptography.HashAlgorithm"/>s.
+            </summary>
+            <typeparam name="HashAlgorithmT">HashAlgorithm type to wrap.</typeparam>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.HashAlgorithmWrapper`1"/> class.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.Finalize">
+            <summary>
+            Disposes instance, specifying that this is not a direct dispose call.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.Dispose">
+            <summary>
+            Disposes <see cref="T:System.Security.Cryptography.HashAlgorithm"/> created in constructor.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.Dispose(System.Boolean)">
+            <summary>
+            Disposes <see cref="T:System.Security.Cryptography.HashAlgorithm"/> created in constructor.
+            </summary>
+            <param name="disposing">If false, call is assumed to be from the destructor.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.ComputeHash(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.HashAlgorithmWrapper`1.ComputeHash(System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="P:System.Data.HashFunction.HashAlgorithmWrapper`1.HashSize">
+            <inheritdoc />
+        </member>
+        <member name="T:System.Data.HashFunction.HashFunctionAsyncBase">
+            <summary>
+            Abstract implementation of an IHashFunction.
+            Provides convenience checks and ensures a default HashSize has been set at construction.
+            </summary>
+        </member>
+        <member name="T:System.Data.HashFunction.HashFunctionBase">
+            <summary>
+            Abstract implementation of an IHashFunction.
+            Provides convenience checks and ensures a default HashSize has been set at construction.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionBase.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.HashFunctionBase"/> class.
+            </summary>
+            <param name="hashSize"><inheritdoc cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/></param>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionBase.ComputeHash(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionBase.ComputeHash(System.IO.Stream)">
+            <exception cref="T:System.ArgumentException">Stream \data\ must be readable.;data</exception>
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionBase.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <summary>
+            Computes hash value for given stream.
+            </summary>
+            <param name="data">Data to hash.</param>
+            <returns>
+            Hash value of data as byte array.
+            </returns>
+        </member>
+        <member name="P:System.Data.HashFunction.HashFunctionBase.HashSize">
+            <inheritdoc />
+        </member>
+        <member name="P:System.Data.HashFunction.HashFunctionBase.RequiresSeekableStream">
+            <summary>
+            Flag to determine if a hash function needs a seekable stream in order to calculate the hash.
+            Override to true to make <see cref="M:System.Data.HashFunction.HashFunctionBase.ComputeHash(System.IO.Stream)"/> pass a seekable stream to <see cref="M:System.Data.HashFunction.HashFunctionBase.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)"/>.
+            </summary>
+            <value>
+            <c>true</c> if a seekable stream; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionAsyncBase.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.HashFunctionAsyncBase"/> class.
+            </summary>
+            <param name="hashSize"><inheritdoc cref="P:System.Data.HashFunction.HashFunctionBase.HashSize"/></param>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionAsyncBase.ComputeHashAsync(System.IO.Stream)">
+            <exception cref="T:System.ArgumentException">Stream \data\ must be readable.;data</exception>
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Data.HashFunction.HashFunctionAsyncBase.ComputeHashAsyncInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <summary>
+            Computes hash value for given stream asynchronously.
+            </summary>
+            <param name="data">Data to hash.</param>
+            <returns>
+            Hash value of data as byte array.
+            </returns>
+        </member>
+        <member name="T:System.Data.HashFunction.IHashFunction_Extensions">
+            <summary>
+            Static class to provide extension functions for IHashFunction instances.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Boolean)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Byte)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Char)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Double)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Single)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int64)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.SByte)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int16)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.String)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+            <remarks>
+            UTF-8 encoding used to convert string to bytes.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt64)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt16)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash``1(System.Data.HashFunction.IHashFunction,``0)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <typeparam name="ModelT">Type of data to be hashed.</typeparam>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+            <remarks>
+            <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter"/> is used to turn given data into a byte array.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Boolean,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Byte,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Char,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Double,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Single,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int32,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int64,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.SByte,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Int16,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.String,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+            <remarks>
+            UTF-8 encoding used to convert string to bytes.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt32,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt64,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.UInt16,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash``1(System.Data.HashFunction.IHashFunction,``0,System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <typeparam name="ModelT">Type of data to be hashed.</typeparam>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desizedHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+            <remarks>
+            <see cref="T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter"/> is used to turn given data into a byte array.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.IHashFunction_Extensions.ComputeHash(System.Data.HashFunction.IHashFunction,System.Byte[],System.Int32)">
+            <summary>
+            Computes hash value for given data.
+            </summary>
+            <param name="hashFunction">Hash function to use.</param>
+            <param name="data">Data to be hashed.</param>
+            <param name="desiredHashSize">Desired size of resulting hash, in bits.</param>
+            <returns>
+            Hash value of the data as byte array.
+            </returns>
+        </member>
+        <member name="T:System.Data.HashFunction.NamespaceDoc">
+            <summary>
+            Namespace containing all supported HashFunctions provided by Data.HashFunction.
+            </summary>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions">
+            <summary>
+            Static class to provide ReflectBits extension functions.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.Byte,System.Int32)">
+            <summary>
+            Reflects the low-order bits of an integer.
+            </summary>
+            <param name="value">The integer value to reflect.</param>
+            <param name="bitLength">Number of low-order bits to reflect.</param>
+            <returns>New integer whose low-order bitLength number of bits have been reflected.</returns>
+            <remarks>Any non-included high orders bits will be zeroed out in the returned integer.</remarks>
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength must be in the range [1, 8].</exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.UInt16,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength must be in the range [1, 16].</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.Byte,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.UInt32,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength must be in the range [1, 32]</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.Byte,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.UInt64,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength must be in the range [1, 64]</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReflectBitsExtensions.ReflectBits(System.Byte,System.Int32)"/>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.NamespaceDoc">
+            <summary>
+            Contains extension functions for manipulating integer to be shared only within Data.HashFunction.* assemblies.
+            </summary>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions">
+            <summary>
+            Static class to provide ToBytes extension functions.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.Byte,System.Int32)">
+            <summary>
+            Converts integer to the smallest byte array that will fit the integers low-order bitLength bits.
+            </summary>
+            <param name="value">The value to convert to bytes.</param>
+            <param name="bitLength">Number of bits to use from the provided value.</param>
+            <returns>An smallest possible array of bytes that contains all of the low-order bitLength bits.</returns>
+            <remarks>Any extra high-order bits in the last byte are guaranteed to be zero.</remarks>
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength but be in the range [1, 8].</exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.UInt16,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength but be in the range [1, 16].</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.Byte,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.UInt32,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength but be in the range [1, 32].</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.Byte,System.Int32)"/>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.UInt64,System.Int32)">
+            <exception cref="T:System.ArgumentOutOfRangeException">bitLength;bitLength but be in the range [1, 64].</exception>
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.IntegerManipulation.ToBytesExtensions.ToBytes(System.Byte,System.Int32)"/>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.NamespaceDoc">
+            <summary>
+            Contains extension functions to be shared only within Data.HashFunction.* assemblies.
+            </summary>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.ExtendedMultiplyExtensions">
+            <summary>
+            Static class to provide ExtendedMultiply extension functions.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ExtendedMultiplyExtensions.ExtendedMultiply(System.Collections.Generic.IReadOnlyList{System.UInt32},System.Collections.Generic.IReadOnlyList{System.UInt32})">
+            <summary>
+            Multiplies operand1 by operand2 as if both operand1 and operand2 were single large integers.
+            </summary>
+            <param name="operand1">Array of UInt32 values to be multiplied.</param>
+            <param name="operand2">Array of UInt32 values to multiply by.</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.RotateRightExtensions">
+            <summary>Static class to provide RotateRight extension functions.</summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateRightExtensions.RotateRight(System.Byte,System.Int32)">
+            <summary>
+            Rotate bits of integer right by specified amount.
+            </summary>
+            <param name="operand">8-bit integer that will have its bits rotated right.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 8-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order three bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 7 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateRightExtensions.RotateRight(System.UInt16,System.Int32)">
+            <summary>
+            Rotate bits of integer right by specified amount.
+            </summary>
+            <param name="operand">16-bit integer that will have its bits rotated right.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 16-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order four bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 15 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateRightExtensions.RotateRight(System.UInt32,System.Int32)">
+            <summary>
+            Rotate bits of integer right by specified amount.
+            </summary>
+            <param name="operand">32-bit integer that will have its bits rotated right.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 32-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order five bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 31 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateRightExtensions.RotateRight(System.UInt64,System.Int32)">
+            <summary>
+            Rotate bits of integer right by specified amount.
+            </summary>
+            <param name="operand">64-bit integer that will have its bits rotated right.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 64-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order six bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 63 bits.
+            </remarks>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.RotateLeftExtensions">
+            <summary>Static class to provide RotateLeft extension functions.</summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateLeftExtensions.RotateLeft(System.Byte,System.Int32)">
+            <summary>
+            Rotate bits of integer left by specified amount.
+            </summary>
+            <param name="operand">8-bit integer that will have its bits rotated left.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 8-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order three bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 7 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateLeftExtensions.RotateLeft(System.UInt16,System.Int32)">
+            <summary>
+            Rotate bits of integer left by specified amount.
+            </summary>
+            <param name="operand">16-bit integer that will have its bits rotated left.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 16-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order four bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 15 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateLeftExtensions.RotateLeft(System.UInt32,System.Int32)">
+            <summary>
+            Rotate bits of integer left by specified amount.
+            </summary>
+            <param name="operand">32-bit integer that will have its bits rotated left.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 32-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order five bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 31 bits.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.RotateLeftExtensions.RotateLeft(System.UInt64,System.Int32)">
+            <summary>
+            Rotate bits of integer left by specified amount.
+            </summary>
+            <param name="operand">64-bit integer that will have its bits rotated left.</param>
+            <param name="shiftCount">Number of bits to shift the integer by.</param>
+            <returns>
+            Resulting 64-bit integer after rotating the operand integer's bits by the amount specified by the shiftCount parameter.
+            </returns>
+            <remarks>
+            The shift count is given by the low-order six bits of the shiftCount parameter.
+            That is, the actual shift count is 0 to 63 bits.
+            </remarks>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.IntegerManipulation.ReverseByteOrderExtensions">
+            <summary>
+            Static class to provide ReverseByteOrder extension functions.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReverseByteOrderExtensions.ReverseByteOrder(System.UInt16)">
+            <summary>
+            Reverses byte order of operand provided.
+            </summary>
+            <param name="operand">16-bit integer that will have its byte order reversed.</param>
+            <returns>
+            Resulting 16-bit integer after reversing the operand's byte order.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReverseByteOrderExtensions.ReverseByteOrder(System.UInt32)">
+            <summary>
+            Reverses byte order of operand provided.
+            </summary>
+            <param name="operand">32-bit integer that will have its byte order reversed.</param>
+            <returns>
+            Resulting 32-bit integer after reversing the parameter's byte order.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.IntegerManipulation.ReverseByteOrderExtensions.ReverseByteOrder(System.UInt64)">
+            <summary>
+            Reverses byte order of operand provided.
+            </summary>
+            <param name="operand">64-bit integer that will have its byte order reversed.</param>
+            <returns>
+            Resulting 64-bit integer after reversing the parameter's byte order.
+            </returns>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.UInt128">
+            <summary>Structure to store 128-bit integer as two 64-bit integers.</summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Equals(System.Object)">
+            <summary>Determines whether the specified <see cref="T:System.Data.HashFunction.Utilities.UInt128"/> is equal to the current <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.</summary>
+            <param name="obj">The value to compare with the current value.</param>
+            <returns>true if the specified value is equal to the current value; otherwise, false.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.CompareTo(System.Object)">
+            <summary>
+            Compares this instance to a specified object and returns an indication of their relative values.
+            </summary>
+            <param name="value">An object to compare, or null.</param>
+            <returns>
+            A signed number indicating the relative values of this instance and <paramref name="value"/>.
+            
+            Return Value Description 
+            Less than zero 
+            This instance is less than <paramref name="value"/>. 
+            
+            Zero 
+            This instance is equal to <paramref name="value"/>. 
+            
+            Greater than zero 
+            This instance is greater than <paramref name="value"/>.-or- <paramref name="value"/> is null.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref name="value"/> is not a <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.;value</exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.CompareTo(System.Data.HashFunction.Utilities.UInt128)">
+             <summary>
+             Compares this instance to a specified 128-bit unsigned integer and returns an indication of their relative values.
+             </summary>
+             <param name="value">An object to compare with this object.</param>
+             <returns>
+             A signed number indicating the relative values of this instance and <paramref name="value" />.
+            
+             Return Value Description 
+             Less than zero 
+             This instance is less than <paramref name="value" />. 
+             
+             Zero 
+             This instance is equal to <paramref name="value" />. 
+             
+             Greater than zero 
+             This instance is greater than <paramref name="value" />.
+             </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Equals(System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Implicit(System.UInt16)~System.Data.HashFunction.Utilities.UInt128">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.UInt16"/> to <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Implicit(System.UInt32)~System.Data.HashFunction.Utilities.UInt128">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.UInt32"/> to <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Implicit(System.UInt64)~System.Data.HashFunction.Utilities.UInt128">
+            <summary>
+            Performs an implicit conversion from <see cref="T:System.UInt64"/> to <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Increment(System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the increment operator.
+            </summary>
+            <param name="value">The instance to increment.</param>
+            <returns>A new instance representing the value incremented by 1.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Increment(System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the increment operator.
+            </summary>
+            <param name="value">The instance to increment.</param>
+            <returns>A new instance representing the value incremented by 1.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Decrement(System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the decrement operator.
+            </summary>
+            <param name="value">The instance to decrement.</param>
+            <returns>A new instance representing the value decremented by 1.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Decrement(System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the decrement operator.
+            </summary>
+            <param name="value">The instance to decrement.</param>
+            <returns>A new instance representing the value decremented by 1.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Equality(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>Determines whether the second <see cref="T:System.Data.HashFunction.Utilities.UInt128"/> is equal to the first <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.</summary>
+            <param name="a">The first value to compare.</param>
+            <param name="b">The second value to compare.</param>
+            <returns>true if the specified value is equal to the current value; otherwise, false.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Inequality(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>Determines whether the second <see cref="T:System.Data.HashFunction.Utilities.UInt128"/> is not equal to the first <see cref="T:System.Data.HashFunction.Utilities.UInt128"/>.</summary>
+            <param name="a">The first object to compare.</param>
+            <param name="b">The second object to compare.</param>
+            <returns>true if the specified value is not equal to the current value; otherwise, false.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Addition(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the add operator.
+            </summary>
+            <param name="a">The instance to add to.</param>
+            <param name="b">The instance to add.</param>
+            <returns>A new instance representing the first parameter plus the second parameter.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Add(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the add operator.
+            </summary>
+            <param name="a">The instance to add to.</param>
+            <param name="b">The instance to add.</param>
+            <returns>A new instance representing the first parameter plus the second parameter.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_Subtraction(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the subtraction operator.
+            </summary>
+            <param name="a">The instance to subtract from.</param>
+            <param name="b">The instance to subtract.</param>
+            <returns>A new instance representing the first parameter minus the second parameter.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.Subtract(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the subtraction operator.
+            </summary>
+            <param name="a">The instance to subtract from.</param>
+            <param name="b">The instance to subtract.</param>
+            <returns>A new instance representing the first parameter minus the second parameter.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_GreaterThan(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the greater than operator.
+            </summary>
+            <param name="a">The instance to compare.</param>
+            <param name="b">The instance to compare with.</param>
+            <returns><c>true</c> if <paramref name="a"/> is greater than <paramref name="b"/>; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_GreaterThanOrEqual(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the greater or equal to than operator.
+            </summary>
+            <param name="a">The instance to compare.</param>
+            <param name="b">The instance to compare with.</param>
+            <returns><c>true</c> if <paramref name="a"/> is greater than or equal to <paramref name="b"/>; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_LessThan(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the less than operator.
+            </summary>
+            <param name="a">The instance to compare.</param>
+            <param name="b">The instance to compare with.</param>
+            <returns><c>true</c> if <paramref name="a"/> is less than <paramref name="b"/>; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt128.op_LessThanOrEqual(System.Data.HashFunction.Utilities.UInt128,System.Data.HashFunction.Utilities.UInt128)">
+            <summary>
+            Implements the less than or equal to operator.
+            </summary>
+            <param name="a">The instance to compare.</param>
+            <param name="b">The instance to compare with.</param>
+            <returns><c>true</c> if <paramref name="a"/> is less than or equal to <paramref name="b"/>; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UInt128.Low">
+            <summary>Low-order 64-bits.</summary>
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UInt128.High">
+            <summary>High-order 64-bits.</summary>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.UInt32Extensions">
+            <summary>Static class to provide UInt32 value extension functions.</summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UInt32Extensions.ToBytes(System.Collections.Generic.IEnumerable{System.UInt32})">
+            <summary>
+            Converts an enumerable collection of UInt32 values to an enumerable collection of bytes as if it were a single integer.
+            </summary>
+            <param name="values">Array of UInt32 values to convert to a byte array.</param>
+            <returns>
+            Bytes representing the UInt32 array.
+            </returns>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.BigIntegerExtensions">
+            <summary>
+            Static class to provide BigInteger extension functions.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.BigIntegerExtensions.ToUInt32Array(System.Numerics.BigInteger,System.Int32)">
+            <summary>
+            Converts a BigInteger to an array of UInt32 values.
+            </summary>
+            <param name="value">BigInteger to be converted.</param>
+            <param name="bitSize">Expected bit-length of resulting array.  Must be a positive multiple of 32.</param>
+            <returns>
+            Array of UInt32 values representing the BigInteger value.
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">bitSize;bitSize must be a positive a multiple of 32.</exception>
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData">
+            <summary>
+            Centralized methodology for accessing data used by Data.HashFunction.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachRead(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <summary>
+            Executes an action each time a chunk is read.
+            </summary>
+            <param name="action">Function to execute.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachReadAsync(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachRead(System.Action{System.Byte[],System.Int32,System.Int32})"/>
+            <returns>Task representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachGroup(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <summary>
+            Executes an action one or more times, providing the data read as an array whose length is a multiple of groupSize.  
+            Optionally runs an action on the final remainder group.
+            </summary>
+            <param name="groupSize">Length of the groups passed to the action.</param>
+            <param name="action">Action to execute for each full group read.</param>
+            <param name="remainderAction">Action to execute if the final group is less than groupSize.  Null values are allowed.</param>
+            <remarks>remainderAction will not be run if the length of the data is a multiple of groupSize.</remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachGroupAsync(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ForEachGroup(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})"/>
+            <returns>Task representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ToArray">
+            <summary>
+            Reads all data and converts it to an in-memory array.
+            </summary>
+            <returns>Array of bytes read from the data provider.</returns>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ToArrayAsync">
+            <inheritdoc cref="M:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.ToArray"/>
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.Length">
+            <summary>
+            Length of data provided.
+            </summary>
+            <remarks>
+            Implementors are allowed throw an exception if it is not possible to resolve the length of the data.
+            </remarks>
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UnifiedData.UnifiedData.BufferSize">
+            <summary>
+            Length of temporary buffers used, if they are needed.
+            </summary>
+            <remarks>
+            Implementors are not required to use this value.
+            </remarks>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.Utilities.UnifiedData.ArrayData"/> class.
+            </summary>
+            <param name="data">The data to represent.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ForEachRead(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ForEachReadAsync(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ForEachGroup(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ForEachGroupAsync(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ToArray">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.ToArrayAsync">
+            <inheritdoc />
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UnifiedData.ArrayData.Length">
+            <inheritdoc />
+        </member>
+        <member name="T:System.Data.HashFunction.Utilities.UnifiedData.NamespaceDoc">
+            <summary>
+            Contains a centralized methodology for accessing data used by Data.HashFunction both synchronously and asynchronously.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Data.HashFunction.Utilities.UnifiedData.StreamData"/> class.
+            </summary>
+            <param name="data">The stream to represent.</param>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.Dispose">
+            <summary>
+            Disposes underlying stream.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ForEachRead(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ForEachReadAsync(System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ForEachGroup(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ForEachGroupAsync(System.Int32,System.Action{System.Byte[],System.Int32,System.Int32},System.Action{System.Byte[],System.Int32,System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ToArray">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Utilities.UnifiedData.StreamData.ToArrayAsync">
+            <inheritdoc />
+        </member>
+        <member name="P:System.Data.HashFunction.Utilities.UnifiedData.StreamData.Length">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

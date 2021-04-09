@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Data.HashFunction.Blake2</name>
+    </assembly>
+    <members>
+        <member name="T:System.Data.HashFunction.Blake2B">
+            <summary>
+            Implementation of BLAKE2b as specified at https://blake2.net/.  Modified from the canonical C# port at 
+            https://blake2.net/blake2_code_20140114.zip. Supports a hash output size of 8 through 512 bits in 8-bit increments 
+            and allows seeding with a key, salt, and/or personalization sequence.
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.#ctor">
+            <summary>
+            Initializes an instance of the <see cref="T:System.Data.HashFunction.Blake2B"/> class with the default settings
+            (no key, no salt, no personalization, and 512 output length).
+            </summary>
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.#ctor(System.Int32)">
+            <summary>
+            Initializes an instance of the <see cref="T:System.Data.HashFunction.Blake2B"/> class with the provided
+            <paramref name="hashSize"/> (no key, no salt, no personalization). 
+            
+            The <paramref name="hashSize"/> must be 8 bits at the least and 512 bits at most, and 
+            the size in bits must be a multiple of 8.
+            </summary>
+            <param name="hashSize">Hash size to use for the output</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            The provided <paramref name="hashSize"/> is invalid.
+            </exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.#ctor(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Initializes an instance of the <see cref="T:System.Data.HashFunction.Blake2B"/> class with the default hash size. 
+            If not null, the <paramref name="key"/>, <paramref name="salt"/>, and 
+            <paramref name="personalization"/> arguments will be applied to the hashing algorithm. 
+            
+            The <paramref name="key"/> parameter must be a byte sequence of at most 64 bytes.
+            The <paramref name="salt"/> parameter must be a byte sequence of exactly 16 bytes.
+            The <paramref name="personalization"/> parameter must be a byte sequence of exactly 16 
+            bytes.
+            </summary>
+            <param name="key">Key to seed the hash with</param>
+            <param name="salt">Salt to seed the hash with</param>
+            <param name="personalization">Personalization to seed the hash with</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Either the provided <paramref name="key"/> length, <paramref name="salt"/> length, 
+            or <paramref name="personalization"/> length is invalid.
+            </exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Byte},System.Collections.Generic.IEnumerable{System.Byte},System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            Initializes an instance of the <see cref="T:System.Data.HashFunction.Blake2B"/> class with the provided
+            <paramref name="hashSize"/>. If not null, the <paramref name="key"/>, 
+            <paramref name="salt"/>, and <paramref name="personalization"/> arguments will be 
+            applied to the hashing algorithm. 
+            
+            The <paramref name="hashSize"/> must be 8 bits at the least and 512 bits at most, and 
+            the size in bits must be a multiple of 8.
+            The <paramref name="key"/> parameter must be a byte sequence of at most 64 bytes.
+            The <paramref name="salt"/> parameter must be a byte sequence of exactly 16 bytes.
+            The <paramref name="personalization"/> parameter must be a byte sequence of exactly 16 
+            bytes.
+            </summary>
+            <param name="key">Key to seed the hash with</param>
+            <param name="salt">Salt to seed the hash with</param>
+            <param name="personalization">Personalization to seed the hash with</param>
+            <param name="hashSize">Hash size to use for the output</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Either the provided <paramref name="hashSize"/>, <paramref name="key"/> length, 
+            <paramref name="salt"/> length, or <paramref name="personalization"/> length is invalid.
+            </exception>
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.ComputeHashInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <inheritdoc />
+        </member>
+        <member name="M:System.Data.HashFunction.Blake2B.ComputeHashAsyncInternal(System.Data.HashFunction.Utilities.UnifiedData.UnifiedData)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
