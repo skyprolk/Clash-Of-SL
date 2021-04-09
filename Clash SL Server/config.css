@@ -1,0 +1,49 @@
+<appSettings>
+	<!-- Beware, very high value will crash css -->
+  <add key="startingGems" value="100000" />
+
+	<!-- Beware, very high value will crash css -->
+  <add key="startingGold" value="100000" />
+
+	<!-- Beware, very high value will crash css -->
+  <add key="startingElixir" value="100000" />
+
+	<!-- Beware, very high value will crash css -->
+  <add key="startingDarkElixir" value="100000" />
+
+	<!-- User starting trophies - set to random for random starting trophies -->
+  <add key="startingTrophies" value="0" />
+
+	<!-- User starting level (Beware, 9 is the highest starting level) -->
+  <add key="startingLevel" value="0" />
+
+	<!-- Default name when a new player connects to the server-->
+  <add key="defaultName" value="DARK" />
+
+	<!-- Set the logging lvl, 1 for errors only, 2 for warning, 3 for debuging and 4 for overall logging-->
+  <add key="logginglvl" value="4" />
+
+	<!-- Specify where to redirect if the CoC version is outdated -->
+  <add key="UpdateUrl" value="https://localhost/update" />
+
+	<!-- Specify if the server is using patches (.csv, .sc, ...) -->
+  <add key="useCustomPatch" value="false" />
+
+	<!-- Don't forget the trailing slash -->
+  <add key="patchingServer" value="" />
+
+	<!-- Please set the time in seconds like 1200 seconds for 20 minutes -->
+  <add key="maintenanceTimeleft" value="0" />
+
+	<!-- Choose mysql or sqlite-->
+  <add key="databaseConnectionName" value="mysql" />
+
+	<!-- The AdminMessage will be shown in the Inbox of the Players-->
+  <add key="AdminMessage" value="Welcome to Clash Of SL ! Visit http://facebook.com/skyprolk for more Infos."/>
+
+	<!-- The Port of the Server (default is 9339)-->
+  <add key="ServerPort" value="9339"/>
+
+	<!--Name of your server-->
+  <add key="serverName" value="Clash Of SL" />
+</appSettings>
