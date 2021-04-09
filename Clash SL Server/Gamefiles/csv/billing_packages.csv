@@ -1,0 +1,8 @@
+"Name","TID","Disabled","ExistsApple","ExistsAndroid","Diamonds","USD","IconSWF","IconExportName","ShopItemExportName","Order","RED","RMB","KunlunOnly","LenovoID"
+"String","String","boolean","boolean","boolean","int","int","String","String","String","int","boolean","int","boolean","int"
+"com.supercell.magic.package1","TID_DIAMOND_PACK_1",,"TRUE","TRUE",500,499,"sc/shop.sc","icon_gem_small","shop_item_diamond_pack_normal",1,,3000,,9661
+"com.supercell.magic.package2","TID_DIAMOND_PACK_2",,"TRUE","TRUE",1200,999,"sc/shop.sc","icon_gem_normal","shop_item_diamond_pack_normal",2,,6800,,9662
+"com.supercell.magic.package3","TID_DIAMOND_PACK_3",,"TRUE","TRUE",2500,1999,"sc/shop.sc","icon_gem_medium","shop_item_diamond_pack_medium",3,,12800,,9663
+"com.supercell.magic.package4","TID_DIAMOND_PACK_4",,"TRUE","TRUE",6500,4999,"sc/shop.sc","icon_gem_large","shop_item_diamond_pack_large",4,,32800,,9664
+"com.supercell.magic.package5","TID_DIAMOND_PACK_5",,"TRUE","TRUE",14000,9999,"sc/shop.sc","icon_gem_huge","shop_item_diamond_pack_large",5,,64800,,9665
+"com.supercell.magic.package0","TID_DIAMOND_PACK_RED","TRUE","TRUE","FALSE",500,499,"sc/shop.sc","icon_gem_red","shop_item_diamond_pack_red",0,"true",3000,,
