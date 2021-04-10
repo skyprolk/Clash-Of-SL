@@ -20,6 +20,6 @@ All programs developed by the Sky Production Development Team are licensed
 
 ##Patched Versions
 
-* [Clash of SL - Patched APK - v8.24]~(https://www.mediafire.com/?wgl58x1x0a0wn88)
+* [Clash of SL - Patched APK - v8.709.1]~(https://www.mediafire.com/download/9elnxhv7mjowed2)
 
 Provided in the release section
