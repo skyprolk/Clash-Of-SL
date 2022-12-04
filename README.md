@@ -1,8 +1,8 @@
 # What is CSS?
-**CSS** is _**C**lash **S**L **S**erver.
-CSS is the _fully free open source clash of clans private server_ is not affiliated to **"Supercell , Oy "** .This program is copyrighted worldwide.Modified by _**#DARK**_ Ensure Functionality.
+**CSS** is _**C**lash **S**L **S**erver_ that is the _fully free open source clash of clans private server_ and it is not affiliated to **"Supercell , Oy "** .This program is copyrighted worldwide.
+Modified by _**#DARK**_ Ensure Functionality.
 
-# Projects
+# Folder Structure
 
 * Clash SL Server   (CSS)  
 * Clash SL Client   (CSC)  
@@ -11,12 +11,12 @@ CSS is the _fully free open source clash of clans private server_ is not affilia
 * Clash SL Key maker      (CSK)
 * Clash SL Client Patcher  (CSCP)
 
-## Websites
+## Tutorials
+Youtube Playlist - [Click Here](https://youtube.com/playlist?list=PLWKVLn7tx6ZUaR1-7VKo50lVC6i-CfspW)
 
-* [Sky Production - Facebook]~(https://facebook.com/skyprolk)
-* [Sky Production - Instagram]~(https://instagram.com/skyprolk)
-* [Sky Production - Twitter]~(https://twitter.com/skyprolk)
-* [Sky Production - Github]~(https://github.com/skyprolk)
+1. Part - [Gameplay](https://youtu.be/z_B_NoJkjfU)
+2. Part - [WiFi Local Server](https://youtu.be/jQA26Xg0vyE)
+3. Part - [Internet Over Public Server](https://youtu.be/oW-jivCkq6Q)
 
 ## Patched Versions
 
