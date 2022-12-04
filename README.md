@@ -2,7 +2,7 @@
 **CSS** is _**C**lash **S**L **S**erver_ that is the _fully free open source clash of clans private server_ and it is not affiliated to **"Supercell , Oy "** .This program is copyrighted worldwide.
 Modified by _**#DARK**_ Ensure Functionality.
 
-# Folder Structure
+## Folder Structure
 
 * Clash SL Server   (CSS)  
 * Clash SL Client   (CSC)  
@@ -12,14 +12,11 @@ Modified by _**#DARK**_ Ensure Functionality.
 * Clash SL Client Patcher  (CSCP)
 
 ## Tutorials
-Youtube Playlist - [Click Here](https://youtube.com/playlist?list=PLWKVLn7tx6ZUaR1-7VKo50lVC6i-CfspW)
+ Playlist - [Click Here](https://youtube.com/playlist?list=PLWKVLn7tx6ZUaR1-7VKo50lVC6i-CfspW)
 
 1. Part - [Gameplay](https://youtu.be/z_B_NoJkjfU)
 2. Part - [WiFi Local Server](https://youtu.be/jQA26Xg0vyE)
 3. Part - [Internet Over Public Server](https://youtu.be/oW-jivCkq6Q)
 
-## Patched Versions
-
-* [Clash of SL - Patched APK - v8.709.1]~(https://www.mediafire.com/download/9elnxhv7mjowed2)
-
-Provided in the release section
+## Downloads
+Clash of SL _(v8.709.1) **[Patched APK]**_ - [Download](https://www.mediafire.com/download/9elnxhv7mjowed2)
