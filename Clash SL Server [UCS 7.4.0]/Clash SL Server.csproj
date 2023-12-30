@@ -239,7 +239,6 @@
   <ItemGroup>
     <Compile Include="Core\Checker\ConnectionBlocker.cs" />
     <Compile Include="Core\Checker\DirectoryChecker.cs" />
-    <Compile Include="Core\Checker\LicenseChecker.cs" />
     <Compile Include="Core\Crypto\Key.cs" />
     <Compile Include="Core\CSVManager.cs" />
     <Compile Include="Core\Events\Region.cs" />

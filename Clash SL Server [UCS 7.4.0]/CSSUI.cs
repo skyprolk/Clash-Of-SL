@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Xml;
 using CSS.Core;
 using CSS.Core.Network;
+using CSS.Core.Web;
 using CSS.Packets.Messages.Server;
 using System.Timers;
 using CSS.Logic.AvatarStreamEntry;
@@ -278,7 +279,7 @@ namespace CSS
             txtMintenance.Text = "0";
             txtDatabaseType.Text = "";
             txtPort.Text = "9339";
-            txtAdminMessage.Text = "Welcome to Clash SL Server v0.7.3.2 By #DARK";
+            txtAdminMessage.Text = $"Welcome to Clash SL Server v{VersionChecker.GetVersionString()} By #DARK";
             txtLogLevel.Text = "0";
             txtClientVersion.Text = "8.709.16";
         }
@@ -638,6 +639,21 @@ namespace CSS
             Resources.DatabaseManager.Save(ResourcesManager.m_vInMemoryLevels.Values.ToList()).Wait();
             Resources.DatabaseManager.Save(ResourcesManager.GetInMemoryAlliances()).Wait();
             MessageBox.Show("All In-memory data saved to MySQL Database", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void txtID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAllianceName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAllianceScore_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
