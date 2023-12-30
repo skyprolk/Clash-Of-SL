@@ -12,5 +12,5 @@ using System.Windows;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(true)]
 
-[assembly: AssemblyVersion("0.7.3.2")]
-[assembly: AssemblyFileVersion("0.7.3.2")]
+[assembly: AssemblyVersion("0.7.3.3")]
+[assembly: AssemblyFileVersion("0.7.3.3")]
