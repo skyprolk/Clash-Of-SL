@@ -27,7 +27,7 @@ DROP TABLE IF EXISTS `clan`;
 CREATE TABLE `clan` (
   `ClanId` bigint(20) NOT NULL COMMENT 'The ID of the Clan',
   `LastUpdateTime` datetime NOT NULL COMMENT 'The last time when this clan has been loaded',
-  `Data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT 'The infos and members data of the clan',
+  `Data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'The infos and members data of the clan',
   PRIMARY KEY (`ClanId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -54,8 +54,8 @@ CREATE TABLE `player` (
   `AccountPrivileges` tinyint(4) NOT NULL DEFAULT '0',
   `LastUpdateTime` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `IPAddress` varchar(255) DEFAULT NULL,
-  `Avatar` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `GameObjects` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `Avatar` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `GameObjects` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`PlayerId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
