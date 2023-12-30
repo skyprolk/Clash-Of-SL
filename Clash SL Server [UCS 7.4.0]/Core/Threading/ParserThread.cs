@@ -15,7 +15,6 @@ using CSS.Logic;
 using CSS.Packets.Messages.Server;
 using CSS.Core.Checker;
 using CSS.Core.Web;
-using System.Linq;
 
 namespace CSS.Helpers
 {

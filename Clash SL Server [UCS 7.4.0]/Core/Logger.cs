@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -131,12 +132,29 @@ namespace CSS.Core
             
             if (getlevel != 0 || ValidLogLevel == true)
             {
-                if (!File.Exists("Logs/log_" + timestamp + "_.txt"))
-                    using (StreamWriter sw = new StreamWriter("Logs/log_" + timestamp + "_.txt"))
+
+                string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+                string logsDirectory = Path.Combine(executablePath, "Logs");
+                string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss"); // Replace with your timestamp logic
+
+                // Check if the directory exists, if not, create it
+                if (!Directory.Exists(logsDirectory))
+                {
+                    Directory.CreateDirectory(logsDirectory);
+                }
+
+                string filePath = Path.Combine(logsDirectory, "log_" + timestamp + "_.txt");
+
+                // Check if the file exists, if not, create and write to it
+                if (!File.Exists(filePath))
+                {
+                    using (StreamWriter sw = new StreamWriter(filePath))
                     {
                         sw.WriteLineAsync("Log file created at " + DateTime.Now);
                         sw.WriteLineAsync();
                     }
+                }
+
             }
         }
 

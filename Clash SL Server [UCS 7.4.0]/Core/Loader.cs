@@ -22,7 +22,6 @@
         internal CommandFactory CommandFactory;
         internal MessageFactory MessageFactory;
         internal MemoryThread MemThread;
-        internal LicenseChecker LicenseChecker;
         internal EventsHandler Events;
 
         public Loader()
@@ -38,7 +37,6 @@
 
 
             // Core
-            this.LicenseChecker = new LicenseChecker();
             this.ResourcesManager = new ResourcesManager();
             this.ObjectManager = new ObjectManager();
             this.Events = new EventsHandler();
