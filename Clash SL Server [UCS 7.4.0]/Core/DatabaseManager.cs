@@ -419,7 +419,6 @@ namespace CSS.Core
             {
                 switch (Save)
                 {
-
                     case Save.Redis:
                         {
                             foreach (Alliance alliance in alliances)

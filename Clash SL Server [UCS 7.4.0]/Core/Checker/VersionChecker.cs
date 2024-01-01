@@ -30,7 +30,7 @@ namespace CSS.Core.Web
         {
             try
             {
-                string Version = "0.7.3.3";
+                string Version = "0.7.3.4";
                 return (Version);
             }
             catch (Exception)
