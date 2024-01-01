@@ -12,6 +12,7 @@ using static System.Configuration.ConfigurationManager;
 using CSS.Logic.DataSlots;
 using System.Threading.Tasks;
 using CSS.Helpers.List;
+using System.Diagnostics;
 
 namespace CSS.Logic
 {
@@ -27,15 +28,15 @@ namespace CSS.Logic
         internal int LowID;
         internal int m_vAvatarLevel;
         internal int m_vCurrentGems;
-        internal int m_vExperience          = 0;
+        internal int m_vCurrentGold;
+        internal int m_vCurrentElixir;
+        internal int m_vCurrentDarkElixir;
+        internal int m_vExperience;
         internal int m_vLeagueId;
         internal int m_vTrophy;
         internal int m_vDonatedUnits;
         internal int m_vRecievedUnits;
         internal int m_vActiveLayout;
-        internal int m_vAlliance_Gold       = 2800000;
-        internal int m_vAlliance_Elixir     = 2800000;
-        internal int m_vAlliance_DarkElixir = 14400;
         internal int m_vShieldTime;
         internal int m_vProtectionTime;
         internal int ReportedTimes          = 0;
@@ -96,6 +97,10 @@ namespace CSS.Logic
             this.m_vAvatarLevel      = ToInt32(AppSettings["startingLevel"]);
             this.EndShieldTime       = (int) DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
             this.m_vCurrentGems      = ToInt32(AppSettings["startingGems"]);
+            this.m_vCurrentGold    = ToInt32(AppSettings["startingGold"]);
+            this.m_vCurrentElixir  = ToInt32(AppSettings["startingElixir"]);
+            this.m_vCurrentDarkElixir = ToInt32(AppSettings["startingDarkElixir"]);
+            this.m_vExperience = ToInt32(AppSettings["startingLevel"]);
             this.m_vTrophy            = AppSettings["startingTrophies"] == "random" ? rnd.Next(1500, 4999) : ToInt32(AppSettings["startingTrophies"]);
 
             this.AvatarName          = "NoNameYet";
@@ -243,10 +248,9 @@ namespace CSS.Logic
                 data.AddInt(m_vDonated);
                 data.AddInt(100); // Attack Loses
                 data.AddInt(m_vReceived);
-
-                data.AddInt(this.m_vAlliance_Gold);
-                data.AddInt(this.m_vAlliance_Elixir);
-                data.AddInt(this.m_vAlliance_DarkElixir);
+                data.AddInt(this.m_vCurrentGold);
+                data.AddInt(this.m_vCurrentElixir);
+                data.AddInt(this.m_vCurrentDarkElixir);
                 data.AddInt(0);
                 data.Add(1);
                 data.AddLong(946720861000);
@@ -375,6 +379,7 @@ namespace CSS.Logic
         public void LoadFromJSON(string jsonString)
         {
             var jsonObject = JObject.Parse(jsonString);
+            Console.WriteLine(jsonObject);
             this.UserId = jsonObject["avatar_id"].ToObject<long>();
             this.HighID = jsonObject["id_high_int"].ToObject<int>();
             this.LowID = jsonObject["id_low_int"].ToObject<int>();
@@ -397,6 +402,9 @@ namespace CSS.Logic
             this.m_vAvatarLevel = jsonObject["avatar_level"].ToObject<int>();
             this.m_vExperience = jsonObject["experience"].ToObject<int>();
             this.m_vCurrentGems = jsonObject["current_gems"].ToObject<int>();
+            this.m_vCurrentGold = jsonObject["current_gold"].ToObject<int>();
+            this.m_vCurrentElixir = jsonObject["current_elixir"].ToObject<int>();
+            this.m_vCurrentDarkElixir = jsonObject["current_dark_elixir"].ToObject<int>();
             SetScore(jsonObject["score"].ToObject<int>());
             this.m_vNameChangingLeft = jsonObject["nameChangesLeft"].ToObject<byte>();
             this.m_vnameChosenByUser = jsonObject["nameChosenByUser"].ToObject<byte>();
@@ -643,6 +651,9 @@ namespace CSS.Logic
                 {"avatar_level", this.m_vAvatarLevel},
                 {"experience", this.m_vExperience},
                 {"current_gems", this.m_vCurrentGems},
+                {"current_gold", this.m_vCurrentGold},
+                {"current_elixir", this.m_vCurrentElixir},
+                {"current_dark_elixir", this.m_vCurrentDarkElixir},
                 {"score", GetScore()},
                 {"nameChangesLeft", this.m_vNameChangingLeft},
                 {"nameChosenByUser", (ushort) m_vnameChosenByUser},
