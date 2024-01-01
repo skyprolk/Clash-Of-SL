@@ -77,6 +77,9 @@ namespace CSS
             txtPlayerName.Enabled = false;
             txtPlayerScore.Enabled = false;
             txtPlayerGems.Enabled = false;
+            txtPlayerGold.Enabled = false;
+            txtPlayerElixir.Enabled = false;
+            txtPlayerDarkElixir.Enabled = false;
             txtTownHallLevel.Enabled = false;
             txtAllianceID.Enabled = false;
             txtPlayerLevel.Enabled = false;
@@ -191,6 +194,9 @@ namespace CSS
                 txtPlayerName.Enabled = true;
                 txtPlayerScore.Enabled = true;
                 txtPlayerGems.Enabled = true;
+                txtPlayerGold.Enabled = true;
+                txtPlayerElixir.Enabled = true;
+                txtPlayerDarkElixir.Enabled = true;
                 txtTownHallLevel.Enabled = true;
                 txtAllianceID.Enabled = true;
                 txtPlayerLevel.Enabled = true;
@@ -200,6 +206,9 @@ namespace CSS
                 txtPlayerName.Text = Convert.ToString(l.Avatar.AvatarName);
                 txtPlayerScore.Text = Convert.ToString(l.Avatar.GetScore());
                 txtPlayerGems.Text = Convert.ToString(l.Avatar.m_vCurrentGems);
+                txtPlayerGold.Text = Convert.ToString(l.Avatar.m_vCurrentGold);
+                txtPlayerElixir.Text = Convert.ToString(l.Avatar.m_vCurrentElixir);
+                txtPlayerDarkElixir.Text = Convert.ToString(l.Avatar.m_vCurrentDarkElixir);
                 txtTownHallLevel.Text = Convert.ToString(l.Avatar.m_vTownHallLevel);
                 txtAllianceID.Text = Convert.ToString(l.Avatar.AllianceId);
                 materialLabel7.Text = l.Avatar.Region;
@@ -212,6 +221,9 @@ namespace CSS
                 txtPlayerName.Enabled = false;
                 txtPlayerScore.Enabled = false;
                 txtPlayerGems.Enabled = false;
+                txtPlayerGold.Enabled = false;
+                txtPlayerElixir.Enabled = false;
+                txtPlayerDarkElixir.Enabled = false;
                 txtTownHallLevel.Enabled = false;
                 txtAllianceID.Enabled = false;
                 txtPlayerLevel.Enabled = false;
@@ -219,6 +231,9 @@ namespace CSS
                 txtPlayerName.Clear();
                 txtPlayerScore.Clear();
                 txtPlayerGems.Clear();
+                txtPlayerGold.Clear();
+                txtPlayerElixir.Clear();
+                txtPlayerDarkElixir.Clear();
                 txtTownHallLevel.Clear();
                 txtAllianceID.Clear();
                 txtPlayerLevel.Clear();
@@ -233,6 +248,9 @@ namespace CSS
             txtPlayerName.Clear();
             txtPlayerScore.Clear();
             txtPlayerGems.Clear();
+            txtPlayerGold.Clear();
+            txtPlayerElixir.Clear();
+            txtPlayerDarkElixir.Clear();
             txtTownHallLevel.Clear();
             txtAllianceID.Clear();
             txtPlayerID.Clear();
@@ -249,6 +267,9 @@ namespace CSS
             l.Avatar.SetName(txtPlayerName.Text);
             l.Avatar.SetScore(Convert.ToInt32(txtPlayerScore.Text));
             l.Avatar.m_vCurrentGems = Convert.ToInt32(txtPlayerGems.Text);
+            l.Avatar.m_vCurrentGold = Convert.ToInt32(txtPlayerGold.Text);
+            l.Avatar.m_vCurrentElixir = Convert.ToInt32(txtPlayerElixir.Text);
+            l.Avatar.m_vCurrentDarkElixir = Convert.ToInt32(txtPlayerDarkElixir.Text);
             l.Avatar.SetTownHallLevel(Convert.ToInt32(txtTownHallLevel.Text));
             l.Avatar.AllianceId = Convert.ToInt32(txtAllianceID.Text);
             l.Avatar.m_vAvatarLevel = Convert.ToInt32(txtPlayerLevel.Text);
@@ -601,6 +622,7 @@ namespace CSS
                 alliance.m_vAllianceName = txtAllianceName.Text;
                 alliance.m_vAllianceLevel = Convert.ToInt32(txtAllianceLevel.Text);
                 alliance.m_vAllianceDescription = txtAllianceDescription.Text;
+                alliance.m_vScore = Convert.ToInt32(txtAllianceScore.Text);
                 Resources.DatabaseManager.Save(alliance);
             }
             else
@@ -639,21 +661,6 @@ namespace CSS
             Resources.DatabaseManager.Save(ResourcesManager.m_vInMemoryLevels.Values.ToList()).Wait();
             Resources.DatabaseManager.Save(ResourcesManager.GetInMemoryAlliances()).Wait();
             MessageBox.Show("All In-memory data saved to MySQL Database", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void txtID_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAllianceName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAllianceScore_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

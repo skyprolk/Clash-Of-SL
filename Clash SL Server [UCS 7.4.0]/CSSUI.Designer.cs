@@ -91,6 +91,12 @@ namespace CSS
             this.materialLabel34 = new MaterialSkin.Controls.MaterialLabel();
             this.txtPlayerGems = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel33 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtPlayerGold = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabelGold = new MaterialSkin.Controls.MaterialLabel();
+            this.txtPlayerElixir = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabelElixir = new MaterialSkin.Controls.MaterialLabel();
+            this.txtPlayerDarkElixir = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabelDarkElixir = new MaterialSkin.Controls.MaterialLabel();
             this.txtPlayerScore = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel32 = new MaterialSkin.Controls.MaterialLabel();
             this.txtPlayerName = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -161,7 +167,7 @@ namespace CSS
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.txtAllianceScore = new MaterialSkin.Controls.MaterialLabel();
+            this.txtAllianceScore = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtAllianceLevel = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel39 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton22 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -213,7 +219,7 @@ namespace CSS
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(944, 393);
+            this.materialTabControl1.Size = new System.Drawing.Size(944, 532);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -245,7 +251,7 @@ namespace CSS
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(936, 366);
+            this.tabPage1.Size = new System.Drawing.Size(936, 592);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -578,7 +584,7 @@ namespace CSS
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(936, 366);
+            this.tabPage2.Size = new System.Drawing.Size(936, 592);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Player Manager";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -605,7 +611,7 @@ namespace CSS
             this.materialTabControl2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl2.Name = "materialTabControl2";
             this.materialTabControl2.SelectedIndex = 0;
-            this.materialTabControl2.Size = new System.Drawing.Size(953, 360);
+            this.materialTabControl2.Size = new System.Drawing.Size(953, 592);
             this.materialTabControl2.TabIndex = 0;
             // 
             // tabPage4
@@ -682,7 +688,7 @@ namespace CSS
             this.listView1.MouseState = MaterialSkin.MouseState.OUT;
             this.listView1.Name = "listView1";
             this.listView1.OwnerDraw = true;
-            this.listView1.Size = new System.Drawing.Size(938, 360);
+            this.listView1.Size = new System.Drawing.Size(938, 480);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -749,6 +755,12 @@ namespace CSS
             this.tabPage5.Controls.Add(this.materialLabel34);
             this.tabPage5.Controls.Add(this.txtPlayerGems);
             this.tabPage5.Controls.Add(this.materialLabel33);
+            this.tabPage5.Controls.Add(this.txtPlayerGold);
+            this.tabPage5.Controls.Add(this.materialLabelGold);
+            this.tabPage5.Controls.Add(this.txtPlayerElixir);
+            this.tabPage5.Controls.Add(this.materialLabelElixir);
+            this.tabPage5.Controls.Add(this.txtPlayerDarkElixir);
+            this.tabPage5.Controls.Add(this.materialLabelDarkElixir);
             this.tabPage5.Controls.Add(this.txtPlayerScore);
             this.tabPage5.Controls.Add(this.materialLabel32);
             this.tabPage5.Controls.Add(this.txtPlayerName);
@@ -761,11 +773,104 @@ namespace CSS
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Edit Player";
             // 
+            // txtPlayerID
+            // 
+            this.txtPlayerID.Depth = 0;
+            this.txtPlayerID.Hint = "";
+            this.txtPlayerID.Location = new System.Drawing.Point(435, 32);
+            this.txtPlayerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerID.MaxLength = 32767;
+            this.txtPlayerID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerID.Name = "txtPlayerID";
+            this.txtPlayerID.PasswordChar = '\0';
+            this.txtPlayerID.SelectedText = "";
+            this.txtPlayerID.SelectionLength = 0;
+            this.txtPlayerID.SelectionStart = 0;
+            this.txtPlayerID.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerID.TabIndex = 11;
+            this.txtPlayerID.TabStop = false;
+            this.txtPlayerID.UseSystemPasswordChar = false;
+            // 
+            // materialLabel36
+            // 
+            this.materialLabel36.AutoSize = true;
+            this.materialLabel36.Depth = 0;
+            this.materialLabel36.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel36.Location = new System.Drawing.Point(298, 32);
+            this.materialLabel36.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel36.Name = "materialLabel36";
+            this.materialLabel36.Size = new System.Drawing.Size(72, 19);
+            this.materialLabel36.TabIndex = 10;
+            this.materialLabel36.Text = "Player ID:";
+            // 
+            // txtPlayerName
+            // 
+            this.txtPlayerName.Depth = 0;
+            this.txtPlayerName.Hint = "";
+            this.txtPlayerName.Location = new System.Drawing.Point(435, 72);
+            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerName.MaxLength = 32767;
+            this.txtPlayerName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.PasswordChar = '\0';
+            this.txtPlayerName.SelectedText = "";
+            this.txtPlayerName.SelectionLength = 0;
+            this.txtPlayerName.SelectionStart = 0;
+            this.txtPlayerName.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerName.TabIndex = 1;
+            this.txtPlayerName.TabStop = false;
+            this.txtPlayerName.UseSystemPasswordChar = false;
+            // 
+            // materialLabel34
+            // 
+            this.materialLabel34.AutoSize = true;
+            this.materialLabel34.Depth = 0;
+            this.materialLabel34.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel34.Location = new System.Drawing.Point(298, 72);
+            this.materialLabel34.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel34.Name = "materialLabel34";
+            this.materialLabel34.Size = new System.Drawing.Size(98, 19);
+            this.materialLabel34.TabIndex = 6;
+            this.materialLabel34.Text = "Player Name:";
+            // 
+            // txtPlayerScore
+            // 
+            this.txtPlayerScore.Depth = 0;
+            this.txtPlayerScore.Hint = "";
+            this.txtPlayerScore.Location = new System.Drawing.Point(447, 112);
+            this.txtPlayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerScore.MaxLength = 32767;
+            this.txtPlayerScore.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerScore.Name = "txtPlayerScore";
+            this.txtPlayerScore.PasswordChar = '\0';
+            this.txtPlayerScore.SelectedText = "";
+            this.txtPlayerScore.SelectionLength = 0;
+            this.txtPlayerScore.SelectionStart = 0;
+            this.txtPlayerScore.Size = new System.Drawing.Size(144, 23);
+            this.txtPlayerScore.TabIndex = 3;
+            this.txtPlayerScore.TabStop = false;
+            this.txtPlayerScore.UseSystemPasswordChar = false;
+            // 
+            // materialLabel31
+            // 
+            this.materialLabel31.AutoSize = true;
+            this.materialLabel31.Depth = 0;
+            this.materialLabel31.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel31.Location = new System.Drawing.Point(298, 112);
+            this.materialLabel31.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel31.Name = "materialLabel31";
+            this.materialLabel31.Size = new System.Drawing.Size(97, 19);
+            this.materialLabel31.TabIndex = 0;
+            this.materialLabel31.Text = "Player Score:";
+            // 
             // txtPlayerLevel
             // 
             this.txtPlayerLevel.Depth = 0;
             this.txtPlayerLevel.Hint = "";
-            this.txtPlayerLevel.Location = new System.Drawing.Point(447, 150);
+            this.txtPlayerLevel.Location = new System.Drawing.Point(447, 152);
             this.txtPlayerLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPlayerLevel.MaxLength = 32767;
             this.txtPlayerLevel.MouseState = MaterialSkin.MouseState.HOVER;
@@ -785,12 +890,198 @@ namespace CSS
             this.materialLabel38.Depth = 0;
             this.materialLabel38.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel38.Location = new System.Drawing.Point(298, 149);
+            this.materialLabel38.Location = new System.Drawing.Point(298, 152);
             this.materialLabel38.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel38.Name = "materialLabel38";
             this.materialLabel38.Size = new System.Drawing.Size(93, 19);
             this.materialLabel38.TabIndex = 29;
             this.materialLabel38.Text = "Player Level:";
+            // 
+            // txtTownHallLevel
+            // 
+            this.txtTownHallLevel.Depth = 0;
+            this.txtTownHallLevel.Hint = "";
+            this.txtTownHallLevel.Location = new System.Drawing.Point(457, 192);
+            this.txtTownHallLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTownHallLevel.MaxLength = 32767;
+            this.txtTownHallLevel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtTownHallLevel.Name = "txtTownHallLevel";
+            this.txtTownHallLevel.PasswordChar = '\0';
+            this.txtTownHallLevel.SelectedText = "";
+            this.txtTownHallLevel.SelectionLength = 0;
+            this.txtTownHallLevel.SelectionStart = 0;
+            this.txtTownHallLevel.Size = new System.Drawing.Size(134, 23);
+            this.txtTownHallLevel.TabIndex = 7;
+            this.txtTownHallLevel.TabStop = false;
+            this.txtTownHallLevel.UseSystemPasswordChar = false;
+            // 
+            // materialLabel32
+            // 
+            this.materialLabel32.AutoSize = true;
+            this.materialLabel32.Depth = 0;
+            this.materialLabel32.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel32.Location = new System.Drawing.Point(298, 192);
+            this.materialLabel32.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel32.Name = "materialLabel32";
+            this.materialLabel32.Size = new System.Drawing.Size(113, 369);
+            this.materialLabel32.TabIndex = 2;
+            this.materialLabel32.Text = "Townhall Level:";
+            // 
+            // txtAllianceID
+            // 
+            this.txtAllianceID.Depth = 0;
+            this.txtAllianceID.Hint = "";
+            this.txtAllianceID.Location = new System.Drawing.Point(419, 232);
+            this.txtAllianceID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAllianceID.MaxLength = 32767;
+            this.txtAllianceID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtAllianceID.Name = "txtAllianceID";
+            this.txtAllianceID.PasswordChar = '\0';
+            this.txtAllianceID.SelectedText = "";
+            this.txtAllianceID.SelectionLength = 0;
+            this.txtAllianceID.SelectionStart = 0;
+            this.txtAllianceID.Size = new System.Drawing.Size(170, 23);
+            this.txtAllianceID.TabIndex = 9;
+            this.txtAllianceID.TabStop = false;
+            this.txtAllianceID.UseSystemPasswordChar = false;
+            // 
+            // materialLabel35
+            // 
+            this.materialLabel35.AutoSize = true;
+            this.materialLabel35.Depth = 0;
+            this.materialLabel35.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel35.Location = new System.Drawing.Point(298, 232);
+            this.materialLabel35.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel35.Name = "materialLabel35";
+            this.materialLabel35.Size = new System.Drawing.Size(85, 19);
+            this.materialLabel35.TabIndex = 8;
+            this.materialLabel35.Text = "Alliance ID:";
+            //
+            // txtPlayerGems
+            // 
+            this.txtPlayerGems.Depth = 0;
+            this.txtPlayerGems.Hint = "";
+            this.txtPlayerGems.Location = new System.Drawing.Point(435, 272);
+            this.txtPlayerGems.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerGems.MaxLength = 32767;
+            this.txtPlayerGems.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerGems.Name = "txtPlayerGems";
+            this.txtPlayerGems.PasswordChar = '\0';
+            this.txtPlayerGems.SelectedText = "";
+            this.txtPlayerGems.SelectionLength = 0;
+            this.txtPlayerGems.SelectionStart = 0;
+            this.txtPlayerGems.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerGems.TabIndex = 5;
+            this.txtPlayerGems.TabStop = false;
+            this.txtPlayerGems.UseSystemPasswordChar = false;
+            // 
+            // materialLabel33
+            // 
+            this.materialLabel33.AutoSize = true;
+            this.materialLabel33.Depth = 0;
+            this.materialLabel33.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel33.Location = new System.Drawing.Point(298, 272);
+            this.materialLabel33.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel33.Name = "materialLabel33";
+            this.materialLabel33.Size = new System.Drawing.Size(97, 19);
+            this.materialLabel33.TabIndex = 4;
+            this.materialLabel33.Text = "Player Gems:";
+            //
+            // txtPlayerGold
+            // 
+            this.txtPlayerGold.Depth = 0;
+            this.txtPlayerGold.Hint = "";
+            this.txtPlayerGold.Location = new System.Drawing.Point(435, 312);
+            this.txtPlayerGold.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerGold.MaxLength = 32767;
+            this.txtPlayerGold.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerGold.Name = "txtPlayerGold";
+            this.txtPlayerGold.PasswordChar = '\0';
+            this.txtPlayerGold.SelectedText = "";
+            this.txtPlayerGold.SelectionLength = 0;
+            this.txtPlayerGold.SelectionStart = 0;
+            this.txtPlayerGold.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerGold.TabIndex = 6;
+            this.txtPlayerGold.TabStop = false;
+            this.txtPlayerGold.UseSystemPasswordChar = false;
+            // 
+            // materialLabelGold
+            // 
+            this.materialLabelGold.AutoSize = true;
+            this.materialLabelGold.Depth = 0;
+            this.materialLabelGold.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabelGold.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabelGold.Location = new System.Drawing.Point(298, 312);
+            this.materialLabelGold.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabelGold.Name = "materialLabelGold";
+            this.materialLabelGold.Size = new System.Drawing.Size(97, 19);
+            this.materialLabelGold.TabIndex = 5;
+            this.materialLabelGold.Text = "Player Gold:";
+            //
+            // txtPlayerElixir
+            // 
+            this.txtPlayerElixir.Depth = 0;
+            this.txtPlayerElixir.Hint = "";
+            this.txtPlayerElixir.Location = new System.Drawing.Point(435, 352);
+            this.txtPlayerElixir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerElixir.MaxLength = 32767;
+            this.txtPlayerElixir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerElixir.Name = "txtPlayerElixir";
+            this.txtPlayerElixir.PasswordChar = '\0';
+            this.txtPlayerElixir.SelectedText = "";
+            this.txtPlayerElixir.SelectionLength = 0;
+            this.txtPlayerElixir.SelectionStart = 0;
+            this.txtPlayerElixir.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerElixir.TabIndex = 7;
+            this.txtPlayerElixir.TabStop = false;
+            this.txtPlayerElixir.UseSystemPasswordChar = false;
+            // 
+            // materialLabelElixir
+            // 
+            this.materialLabelElixir.AutoSize = true;
+            this.materialLabelElixir.Depth = 0;
+            this.materialLabelElixir.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabelElixir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabelElixir.Location = new System.Drawing.Point(298, 352);
+            this.materialLabelElixir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabelElixir.Name = "materialLabelElixir";
+            this.materialLabelElixir.Size = new System.Drawing.Size(97, 19);
+            this.materialLabelElixir.TabIndex = 6;
+            this.materialLabelElixir.Text = "Player Elixir:";
+            //
+            // txtPlayerDarkElixir
+            // 
+            this.txtPlayerDarkElixir.Depth = 0;
+            this.txtPlayerDarkElixir.Hint = "";
+            this.txtPlayerDarkElixir.Location = new System.Drawing.Point(435, 392);
+            this.txtPlayerDarkElixir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPlayerDarkElixir.MaxLength = 32767;
+            this.txtPlayerDarkElixir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPlayerDarkElixir.Name = "txtPlayerDarkElixir";
+            this.txtPlayerDarkElixir.PasswordChar = '\0';
+            this.txtPlayerDarkElixir.SelectedText = "";
+            this.txtPlayerDarkElixir.SelectionLength = 0;
+            this.txtPlayerDarkElixir.SelectionStart = 0;
+            this.txtPlayerDarkElixir.Size = new System.Drawing.Size(154, 23);
+            this.txtPlayerDarkElixir.TabIndex = 8;
+            this.txtPlayerDarkElixir.TabStop = false;
+            this.txtPlayerDarkElixir.UseSystemPasswordChar = false;
+            // 
+            // materialLabelDarkElixir
+            // 
+            this.materialLabelDarkElixir.AutoSize = true;
+            this.materialLabelDarkElixir.Depth = 0;
+            this.materialLabelDarkElixir.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabelDarkElixir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabelDarkElixir.Location = new System.Drawing.Point(298, 392);
+            this.materialLabelDarkElixir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabelDarkElixir.Name = "materialLabelDarkElixir";
+            this.materialLabelDarkElixir.Size = new System.Drawing.Size(97, 19);
+            this.materialLabelDarkElixir.TabIndex = 7;
+            this.materialLabelDarkElixir.Text = "Player Dark Elixir:";
             // 
             // materialLabel7
             // 
@@ -798,7 +1089,7 @@ namespace CSS
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(554, 297);
+            this.materialLabel7.Location = new System.Drawing.Point(435, 432);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(29, 19);
@@ -811,7 +1102,7 @@ namespace CSS
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(298, 297);
+            this.materialLabel6.Location = new System.Drawing.Point(298, 432);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(59, 19);
@@ -890,7 +1181,7 @@ namespace CSS
             this.materialRaisedButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton8.Depth = 0;
             this.materialRaisedButton8.Icon = null;
-            this.materialRaisedButton8.Location = new System.Drawing.Point(623, 153);
+            this.materialRaisedButton8.Location = new System.Drawing.Point(623, 232);
             this.materialRaisedButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialRaisedButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton8.Name = "materialRaisedButton8";
@@ -907,7 +1198,7 @@ namespace CSS
             this.materialRaisedButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton7.Depth = 0;
             this.materialRaisedButton7.Icon = null;
-            this.materialRaisedButton7.Location = new System.Drawing.Point(715, 276);
+            this.materialRaisedButton7.Location = new System.Drawing.Point(623, 432);
             this.materialRaisedButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton7.Name = "materialRaisedButton7";
@@ -924,7 +1215,7 @@ namespace CSS
             this.materialRaisedButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton6.Depth = 0;
             this.materialRaisedButton6.Icon = null;
-            this.materialRaisedButton6.Location = new System.Drawing.Point(623, 31);
+            this.materialRaisedButton6.Location = new System.Drawing.Point(623, 32);
             this.materialRaisedButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton6.Name = "materialRaisedButton6";
@@ -934,192 +1225,6 @@ namespace CSS
             this.materialRaisedButton6.Text = "Load Player";
             this.materialRaisedButton6.UseVisualStyleBackColor = true;
             this.materialRaisedButton6.Click += new System.EventHandler(this.materialRaisedButton6_Click);
-            // 
-            // txtPlayerID
-            // 
-            this.txtPlayerID.Depth = 0;
-            this.txtPlayerID.Hint = "";
-            this.txtPlayerID.Location = new System.Drawing.Point(435, 32);
-            this.txtPlayerID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPlayerID.MaxLength = 32767;
-            this.txtPlayerID.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtPlayerID.Name = "txtPlayerID";
-            this.txtPlayerID.PasswordChar = '\0';
-            this.txtPlayerID.SelectedText = "";
-            this.txtPlayerID.SelectionLength = 0;
-            this.txtPlayerID.SelectionStart = 0;
-            this.txtPlayerID.Size = new System.Drawing.Size(154, 23);
-            this.txtPlayerID.TabIndex = 11;
-            this.txtPlayerID.TabStop = false;
-            this.txtPlayerID.UseSystemPasswordChar = false;
-            // 
-            // materialLabel36
-            // 
-            this.materialLabel36.AutoSize = true;
-            this.materialLabel36.Depth = 0;
-            this.materialLabel36.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel36.Location = new System.Drawing.Point(298, 32);
-            this.materialLabel36.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel36.Name = "materialLabel36";
-            this.materialLabel36.Size = new System.Drawing.Size(72, 19);
-            this.materialLabel36.TabIndex = 10;
-            this.materialLabel36.Text = "Player ID:";
-            // 
-            // txtAllianceID
-            // 
-            this.txtAllianceID.Depth = 0;
-            this.txtAllianceID.Hint = "";
-            this.txtAllianceID.Location = new System.Drawing.Point(419, 265);
-            this.txtAllianceID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtAllianceID.MaxLength = 32767;
-            this.txtAllianceID.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtAllianceID.Name = "txtAllianceID";
-            this.txtAllianceID.PasswordChar = '\0';
-            this.txtAllianceID.SelectedText = "";
-            this.txtAllianceID.SelectionLength = 0;
-            this.txtAllianceID.SelectionStart = 0;
-            this.txtAllianceID.Size = new System.Drawing.Size(170, 23);
-            this.txtAllianceID.TabIndex = 9;
-            this.txtAllianceID.TabStop = false;
-            this.txtAllianceID.UseSystemPasswordChar = false;
-            // 
-            // materialLabel35
-            // 
-            this.materialLabel35.AutoSize = true;
-            this.materialLabel35.Depth = 0;
-            this.materialLabel35.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel35.Location = new System.Drawing.Point(298, 263);
-            this.materialLabel35.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel35.Name = "materialLabel35";
-            this.materialLabel35.Size = new System.Drawing.Size(85, 19);
-            this.materialLabel35.TabIndex = 8;
-            this.materialLabel35.Text = "Alliance ID:";
-            // 
-            // txtTownHallLevel
-            // 
-            this.txtTownHallLevel.Depth = 0;
-            this.txtTownHallLevel.Hint = "";
-            this.txtTownHallLevel.Location = new System.Drawing.Point(457, 224);
-            this.txtTownHallLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTownHallLevel.MaxLength = 32767;
-            this.txtTownHallLevel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtTownHallLevel.Name = "txtTownHallLevel";
-            this.txtTownHallLevel.PasswordChar = '\0';
-            this.txtTownHallLevel.SelectedText = "";
-            this.txtTownHallLevel.SelectionLength = 0;
-            this.txtTownHallLevel.SelectionStart = 0;
-            this.txtTownHallLevel.Size = new System.Drawing.Size(134, 23);
-            this.txtTownHallLevel.TabIndex = 7;
-            this.txtTownHallLevel.TabStop = false;
-            this.txtTownHallLevel.UseSystemPasswordChar = false;
-            // 
-            // materialLabel34
-            // 
-            this.materialLabel34.AutoSize = true;
-            this.materialLabel34.Depth = 0;
-            this.materialLabel34.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel34.Location = new System.Drawing.Point(298, 69);
-            this.materialLabel34.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel34.Name = "materialLabel34";
-            this.materialLabel34.Size = new System.Drawing.Size(98, 19);
-            this.materialLabel34.TabIndex = 6;
-            this.materialLabel34.Text = "Player Name:";
-            // 
-            // txtPlayerGems
-            // 
-            this.txtPlayerGems.Depth = 0;
-            this.txtPlayerGems.Hint = "";
-            this.txtPlayerGems.Location = new System.Drawing.Point(435, 186);
-            this.txtPlayerGems.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPlayerGems.MaxLength = 32767;
-            this.txtPlayerGems.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtPlayerGems.Name = "txtPlayerGems";
-            this.txtPlayerGems.PasswordChar = '\0';
-            this.txtPlayerGems.SelectedText = "";
-            this.txtPlayerGems.SelectionLength = 0;
-            this.txtPlayerGems.SelectionStart = 0;
-            this.txtPlayerGems.Size = new System.Drawing.Size(154, 23);
-            this.txtPlayerGems.TabIndex = 5;
-            this.txtPlayerGems.TabStop = false;
-            this.txtPlayerGems.UseSystemPasswordChar = false;
-            // 
-            // materialLabel33
-            // 
-            this.materialLabel33.AutoSize = true;
-            this.materialLabel33.Depth = 0;
-            this.materialLabel33.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel33.Location = new System.Drawing.Point(298, 185);
-            this.materialLabel33.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel33.Name = "materialLabel33";
-            this.materialLabel33.Size = new System.Drawing.Size(97, 19);
-            this.materialLabel33.TabIndex = 4;
-            this.materialLabel33.Text = "Player Gems:";
-            // 
-            // txtPlayerScore
-            // 
-            this.txtPlayerScore.Depth = 0;
-            this.txtPlayerScore.Hint = "";
-            this.txtPlayerScore.Location = new System.Drawing.Point(447, 111);
-            this.txtPlayerScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPlayerScore.MaxLength = 32767;
-            this.txtPlayerScore.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtPlayerScore.Name = "txtPlayerScore";
-            this.txtPlayerScore.PasswordChar = '\0';
-            this.txtPlayerScore.SelectedText = "";
-            this.txtPlayerScore.SelectionLength = 0;
-            this.txtPlayerScore.SelectionStart = 0;
-            this.txtPlayerScore.Size = new System.Drawing.Size(144, 23);
-            this.txtPlayerScore.TabIndex = 3;
-            this.txtPlayerScore.TabStop = false;
-            this.txtPlayerScore.UseSystemPasswordChar = false;
-            // 
-            // materialLabel32
-            // 
-            this.materialLabel32.AutoSize = true;
-            this.materialLabel32.Depth = 0;
-            this.materialLabel32.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel32.Location = new System.Drawing.Point(298, 223);
-            this.materialLabel32.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel32.Name = "materialLabel32";
-            this.materialLabel32.Size = new System.Drawing.Size(113, 19);
-            this.materialLabel32.TabIndex = 2;
-            this.materialLabel32.Text = "Townhall Level:";
-            // 
-            // txtPlayerName
-            // 
-            this.txtPlayerName.Depth = 0;
-            this.txtPlayerName.Hint = "";
-            this.txtPlayerName.Location = new System.Drawing.Point(435, 70);
-            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPlayerName.MaxLength = 32767;
-            this.txtPlayerName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtPlayerName.Name = "txtPlayerName";
-            this.txtPlayerName.PasswordChar = '\0';
-            this.txtPlayerName.SelectedText = "";
-            this.txtPlayerName.SelectionLength = 0;
-            this.txtPlayerName.SelectionStart = 0;
-            this.txtPlayerName.Size = new System.Drawing.Size(154, 23);
-            this.txtPlayerName.TabIndex = 1;
-            this.txtPlayerName.TabStop = false;
-            this.txtPlayerName.UseSystemPasswordChar = false;
-            // 
-            // materialLabel31
-            // 
-            this.materialLabel31.AutoSize = true;
-            this.materialLabel31.Depth = 0;
-            this.materialLabel31.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel31.Location = new System.Drawing.Point(298, 109);
-            this.materialLabel31.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel31.Name = "materialLabel31";
-            this.materialLabel31.Size = new System.Drawing.Size(97, 19);
-            this.materialLabel31.TabIndex = 0;
-            this.materialLabel31.Text = "Player Score:";
             // 
             // tabPage3
             // 
@@ -1160,7 +1265,7 @@ namespace CSS
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(936, 366);
+            this.tabPage3.Size = new System.Drawing.Size(936, 592);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Config Editor";
             // 
@@ -1674,7 +1779,7 @@ namespace CSS
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage6.Size = new System.Drawing.Size(936, 366);
+            this.tabPage6.Size = new System.Drawing.Size(936, 592);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Mail ";
             // 
@@ -2011,7 +2116,7 @@ namespace CSS
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage7.Size = new System.Drawing.Size(936, 366);
+            this.tabPage7.Size = new System.Drawing.Size(936, 592);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Alliance Manager";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2145,17 +2250,21 @@ namespace CSS
             this.tabPage10.Text = "Edit Alliance";
             // 
             // txtAllianceScore
-            // 
-            this.txtAllianceScore.AutoSize = true;
-            this.txtAllianceScore.Depth = 0;
-            this.txtAllianceScore.Font = new System.Drawing.Font("Roboto", 11F);
-            this.txtAllianceScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtAllianceScore.Location = new System.Drawing.Point(392, 243);
-            this.txtAllianceScore.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAllianceScore.Name = "txtAllianceScore";
-            this.txtAllianceScore.Size = new System.Drawing.Size(17, 19);
             this.txtAllianceScore.TabIndex = 50;
-            this.txtAllianceScore.Text = "0";
+            this.txtAllianceScore.Depth = 0;
+            this.txtAllianceScore.Hint = "";
+            this.txtAllianceScore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAllianceScore.MaxLength = 32767;
+            this.txtAllianceScore.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtAllianceScore.PasswordChar = '\0';
+            this.txtAllianceScore.SelectedText = "";
+            this.txtAllianceScore.SelectionLength = 0;
+            this.txtAllianceScore.SelectionStart = 0;
+            this.txtAllianceScore.Size = new System.Drawing.Size(144, 23);
+            this.txtAllianceScore.TabStop = false;
+            this.txtAllianceScore.UseSystemPasswordChar = false;
             // 
             // txtAllianceLevel
             // 
@@ -2346,7 +2455,7 @@ namespace CSS
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage8.Size = new System.Drawing.Size(936, 366);
+            this.tabPage8.Size = new System.Drawing.Size(936, 592);
             this.tabPage8.TabIndex = 5;
             this.tabPage8.Text = "About";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2422,7 +2531,7 @@ namespace CSS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(947, 480);
+            this.ClientSize = new System.Drawing.Size(947, 632);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Font = new System.Drawing.Font("Rexlia Rg", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2531,6 +2640,12 @@ namespace CSS
         private MaterialSkin.Controls.MaterialLabel materialLabel34;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerGems;
         private MaterialSkin.Controls.MaterialLabel materialLabel33;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerGold;
+        private MaterialSkin.Controls.MaterialLabel materialLabelGold;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerElixir;
+        private MaterialSkin.Controls.MaterialLabel materialLabelElixir;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerDarkElixir;
+        private MaterialSkin.Controls.MaterialLabel materialLabelDarkElixir;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerScore;
         private MaterialSkin.Controls.MaterialLabel materialLabel32;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtPlayerName;
@@ -2605,7 +2720,7 @@ namespace CSS
         private MaterialSkin.Controls.MaterialLabel materialLabel47;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAllianceName;
         private MaterialSkin.Controls.MaterialLabel materialLabel48;
-        private MaterialSkin.Controls.MaterialLabel txtAllianceScore;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtAllianceScore;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton16;
         private MaterialSkin.Controls.MaterialLabel label1;
         private MaterialSkin.Controls.MaterialLabel label2;
