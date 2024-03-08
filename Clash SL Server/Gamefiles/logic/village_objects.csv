@@ -1,0 +1,4 @@
+"Name","TID","InfoTID","SWF","ExportName","OffsetX","OffsetY","RequiredTH","BuildTimeD","BuildTimeH","BuildTimeM","BuildTimeS","BuildResource","BuildCost","PickUpEffect","Animations","AnimX","AnimY","AnimID","AnimDir","AnimVisibilityOdds","HasInfoScreen"
+"String","String","String","String","String","int","int","int","int","int","int","int","String","int","String","String","int","int","int","int","int","boolean"
+"Shipyard","TID_VILLAGE_OBJECT_SHIP","TID_VILLAGE_OBJECT_SHIP_INFO","sc/content.sc","northwestern_wreck",-815,1700,4,,0,0,0,,,"Worker Building Pickup",,,,,,,TRUE
+,,,"sc/content.sc","northwestern_wreck",,,,1,0,0,0,,,,,,,,,,

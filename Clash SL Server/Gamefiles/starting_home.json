@@ -1,0 +1,196 @@
+{
+  "android_client": true,
+  "active_layout": 0,
+  "layout_state": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "buildings": [
+    {
+      "data": 1000001,
+      "lvl": 1,
+      "x": 21,
+      "y": 20
+    },
+    {
+      "data": 1000004,
+      "lvl": 0,
+      "x": 20,
+      "y": 16,
+      "res_time": 8992
+    },
+    {
+      "data": 1000000,
+      "lvl": 0,
+      "x": 26,
+      "y": 19,
+      "units": []
+    },
+    {
+      "data": 1000015,
+      "lvl": 0,
+      "x": 18,
+      "y": 20
+    },
+    {
+      "data": 1000014,
+      "lvl": 0,
+      "locked": true,
+      "x": 25,
+      "y": 32
+    },
+    {
+      "data": 1000008,
+      "lvl": 0,
+      "x": 23,
+      "y": 24
+    },
+    {
+      "data": 1000015,
+      "lvl": 0,
+      "x": 21,
+      "y": 24
+    },
+    {
+      "data": 1000002,
+      "lvl": 0,
+      "x": 26,
+      "y": 24,
+      "res_time": 8882
+    },
+    {
+      "data": 1000003,
+      "lvl": 0,
+      "x": 23,
+      "y": 27
+    },
+    {
+      "data": 1000005,
+      "lvl": 0,
+      "x": 20,
+      "y": 26
+    },
+    {
+      "data": 1000006,
+      "lvl": 0,
+      "x": 18,
+      "y": 23,
+      "unit_prod": {
+        "unit_type": 0
+      }
+    }
+  ],
+  "obstacles": [
+  ],
+  "traps": [
+  ],
+  "decos": [
+  ],
+  "respawnVars": {
+    "secondsFromLastRespawn": 195,
+    "respawnSeed": -212853765,
+    "obstacleClearCounter": 0,
+    "time_to_gembox_drop": 359805,
+    "time_in_gembox_period": 244679,
+    "time_to_special_drop": 248205,
+    "time_to_special_period": 97079
+  },
+  "cooldowns": [
+  ],
+  "newShopBuildings": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newShopTraps": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newShopDecos": [
+    1,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "last_league_rank": 1,
+  "last_alliance_level": 0,
+  "last_league_shuffle": 0,
+  "last_season_seen": -1,
+  "last_news_seen": 13,
+  "edit_mode_shown": false,
+  "war_tutorials_seen": 0,
+  "war_base": false,
+  "help_opened": false,
+  "bool_layout_edit_shown_erase": false
+}

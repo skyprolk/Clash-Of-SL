@@ -1,0 +1,12 @@
+"Name","Value"
+"String","int"
+"StarBonusCounter",
+"StarBonusCooldown",
+"StarBonusTimerEndSubTick",
+"StarBonusTimerEndTimestep",
+"StarBonusTimesCollected",
+"ChallengeStarted",
+"ChallengeLayoutIsWar",
+"FriendListLastOpened",
+"BeenInArrangedWar",
+"FILL_ME",

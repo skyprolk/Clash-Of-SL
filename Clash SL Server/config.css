@@ -1,0 +1,67 @@
+<appSettings>
+  <!-- __________________________________ PLAYER SETTINGS __________________________________ -->
+	
+  <add key="startingGems" value="1000000" />
+  <add key="startingGold" value="1000000" />
+  <add key="startingElixir" value="1000000" />
+  <add key="startingDarkElixir" value="1000000" />
+      <!-- Beware, very high values for resources will crash CSS -->
+  <add key="startingTrophies" value="0" />
+      <!-- User starting trophies - set to 'random' for random starting trophies -->
+  <add key="startingLevel" value="1" />
+      <!-- User starting XP level (Beware, 9 is the highest starting level & 1 is the lowest starting level) -->
+      
+  <!-- ________________________________ CUSTOM GAME SETTINGS ________________________________ -->
+	
+  <add key="UpdateUrl" value="http://127.0.0.1/update" />
+      <!-- Specify where to redirect if the CoC version is outdated -->
+  <add key="useCustomPatch" value="false" />
+      <!-- Specify if the server is using patches (.csv, .sc, ...) -->
+  <add key="patchingServer" value="N/A" />
+      <!-- Don't forget the trailing slash -->
+  <add key="maintenanceTimeleft" value="0" />
+      <!-- Please set the time in seconds like 1200 seconds for 20 minutes -->
+  <add key="AdminMessage" value="Welcome to Clash Of SL ! Visit http://facebook.com/skyprolk for more Infos"/>
+      <!-- The AdminMessage will be shown in the Inbox of the Players-->
+  <add key="CustomMaintenance" value=""/>
+      <!-- Custom Maintenance Message -->
+ <add key="ClientVersion" value="8.709.16"/>
+      <!-- Required Client Version to connect -->
+  <add key="MaxOnlinePlayers" value="1000"/>
+  <!-- (Max 2000) This Function is only available for Ultra Users -->
+      
+  <!-- ____________________________________ CSS SETTINGS ____________________________________ -->
+  <add key="CacheServer" value="true" />
+      <!-- Use Redis as cache server-->
+  <add key="UseWebAPI" value="false" />
+      <!-- Choose if you want to use the Web API-->
+  <add key="APIPort" value="88" /> 
+      <!-- The Port of the WebAPI-->
+  <add key="ServerPort" value="9339"/>
+      <!-- The Port of the Server (default is 9339)-->
+  <add key="LogLevel" value="1"/>
+      <!-- Default for no log = 0, for Full Log = 1, Log only = 2-->
+  <add key="Animation" value="true"/>
+  <!-- Use Start Animation = true/false -->
+  <!-- _______________________________________________________________________________________ -->
+
+  <!-- ____________________________________ Database SETTINGS ____________________________________ -->
+  <add key="RedisIPAddress" value="127.0.0.1" />
+  <!-- Redis server IP address-->
+  <add key="RedisPort" value="6379" />
+  <!--  Redis server port-->
+  <add key="RedisPassword" value="" />
+  <!--  Redis server password-->
+
+  <add key="MysqlIPAddress" value="127.0.0.1" />
+  <!-- MySql IP Address -->
+  <add key="MysqlPort" value="3306" />
+  <!-- MySql Username -->
+  <add key="MysqlUsername" value="root" />
+  <!-- MySql Username -->
+  <add key="MysqlPassword" value="" />
+  <!--  MySql server password-->
+  <add key="MysqlDatabase" value="cssdb" />
+  <!--  Redis server password-->
+  <!-- _______________________________________________________________________________________ -->
+</appSettings>

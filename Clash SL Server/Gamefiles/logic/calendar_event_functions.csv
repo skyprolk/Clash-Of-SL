@@ -1,0 +1,21 @@
+"Name","ParameterType","ParameterName","Description"
+"String","String","String","String"
+"TroopTrainingBoost","int","cost","Gem cost for boosting troop training"
+"SpellBrewingBoost","int","cost","Gem cost for boosting spell brewing"
+"BuildingBoost","Building","building","Gem cost for boosting Resource Collectors"
+,"int","cost",
+"TroopDiscount","Troop","troop","Troop training cost (as percentage of the normal cost)"
+,"int","percentage",
+"SpellDiscount","Spell","spell","Spell brewing cost (as percentage of the normal cost)"
+,"int","percentage",
+"ClanXPMultiplier","int","multiplier","(not implemented; not tested) Clan XP earned is multiplied by this amou"
+"OfferBundle","Bundle","bundle","Activate a special offer from gem_bundles.csv"
+"StarBonusMultiplier","int","multiplier","Star Bonus reward is multiplied by this amount"
+"EnableTroop","Troop","troop","Enable a temporary troop"
+"EnableSpell","Spell","spell","Enable a temporary spell"
+"EnableTrap","Trap","trap","Enable a temporary trap"
+"UseTroop","Troop","troop","Uses a specified troop and adds an event objective -  complete useCount battles, using ratioOfHousing troops of the event type, and get rewardGems and rewardXP"
+,"int","useCount","How many multiplayer battles need to be won to complete the objective and get the rewards"
+,"int","ratioOfHousing","Percentage of the max troop housing space for player TH level; rounds to the upper value"
+,"int","rewardGems","Gem reward when completing the objective"
+,"int","rewardXP","XP reward when completing the objective"

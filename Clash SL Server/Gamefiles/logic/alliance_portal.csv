@@ -1,0 +1,3 @@
+"Name","TID","SWF","ExportName","Width","Height"
+"String","String","String","String","int","int"
+"Portal","TID_BUILDING_ALLIANCE_MARKER","sc/buildings.sc","alliance_marker",1,1

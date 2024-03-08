@@ -1,0 +1,9 @@
+Name,Enabled,SupportedPlatforms,AllowedDomains,AllowedUrls,PostingRedirectionUrl
+String,boolean,String,String,String,string
+Boombox,FALSE,ios,boombeach.com,https://www.youtube.com/embed/,https://facebook.com/skyprolk
+,,android,kunlun-cdn.com,about:blank,
+,,kunlun,googlevideo.com,,
+,,,ytimg.com,,
+,,,doubleclick.net,,
+,,,google.com,,
+,,,gstatic.com,,

@@ -1,0 +1,182 @@
+{"events": [
+
+	{ 
+		"id": 0,
+		"name": "Event 0",
+		"boomboxEntry": "CollectorBoost",
+		"eventEntryName": "CollectorBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20180318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "BuildingBoost", "parameters": [ "1000002", "1" ] },
+			{ "name": "BuildingBoost", "parameters": [ "1000004", "1" ] },
+			{ "name": "BuildingBoost", "parameters": [ "1000023", "1" ] }
+		]
+	},
+
+	{ 
+		"id": 1,
+		"name": "Event 1",
+		"boomboxEntry": "ArmySpellBoost",
+		"eventEntryName": "ArmySpellBoost",
+		"inboxEntryId": 1,
+		"visibleTime": "20190318T",
+		"startTime": "20190318T",
+		"endTime": "20200105T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "TroopTrainingBoost", "parameters": [ "1" ] },
+			{ "name": "SpellBrewingBoost", "parameters": [ "1" ] },
+			{ "name": "BuildingBoost", "parameters": [ "1000022", "1" ] },
+			{ "name": "BuildingBoost", "parameters": [ "1000025", "1" ] },
+			{ "name": "BuildingBoost", "parameters": [ "1000030", "1" ] }
+		]
+	},
+
+	{ 
+		"id": 3,
+		"name": "Event 3",
+		"boomboxEntry": "ChristmasSpell",
+		"eventEntryName": "ChristmasSpell",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "EnableSpell", "parameters": [ "26000006" ] }
+		]
+	},
+	
+	{ 
+		"id": 4,
+		"name": "Event 4",
+		"boomboxEntry": "ChristmasTrap",
+		"eventEntryName": "ChristmasTrap",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "EnableTrap", "parameters": [ "12000009" ] }
+		]
+	},
+	
+	{ 
+		"id": 5,
+		"name": "Event 5",
+		"boomboxEntry": "ChristmasUnit",
+		"eventEntryName": "ChristmasUnit",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "EnableTroop", "parameters": [ "4000030" ] }
+		]
+	},
+
+	{ 
+		"id": 6,
+		"name": "Event 6",
+		"boomboxEntry": "TroopDiscountDragon",
+		"eventEntryName": "TroopDiscountDragon",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "TroopDiscount", "parameters": [ "4000008", "5" ] },
+			{ "name": "UseTroop", "parameters": [ "4000008", "5", "25", "10", "9" ] }
+		]
+	},
+
+	{ 
+		"id": 7,
+		"name": "Event 7",
+		"boomboxEntry": "StarBonus",
+		"eventEntryName": "StarBonus",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "StarBonusMultiplier", "parameters": [ "2" ] }
+		]	
+	},	
+	
+	{ 
+		"id": 8,
+		"name": "Event 8",
+		"boomboxEntry": "TroopDiscountGolem",
+		"eventEntryName": "TroopDiscountGolem",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "TroopDiscount", "parameters": [ "4000013", "5" ] },
+			{ "name": "UseTroop", "parameters": [ "4000013", "5", "25", "10", "9" ] }
+		]
+	},	
+	
+	{ 
+		"id": 9,
+		"name": "Event 9",
+		"boomboxEntry": "SpellDiscountJump",
+		"eventEntryName": "SpellDiscountJump",
+		"inboxEntryId": 1,
+		"visibleTime": "20170318T",
+		"startTime": "20170318T",
+		"endTime": "20190318T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "SpellDiscount", "parameters": [ "26000003", "5" ] }
+		]
+	},
+
+	{ 
+		"id": 10,
+		"name": "Event 10",
+		"boomboxEntry": "",
+		"eventEntryName": "",
+		"inboxEntryId": 1,
+		"startTime": "20161207T",
+		"endTime": "20161227T",
+		"showUpcoming": 1,
+		"functions": [
+			{ "name": "OfferBundle", "parameters": [ "38000035" ] },
+			{ "name": "OfferBundle", "parameters": [ "38000036" ] },
+			{ "name": "OfferBundle", "parameters": [ "38000037" ] },
+			{ "name": "OfferBundle", "parameters": [ "38000038" ] },
+			{ "name": "OfferBundle", "parameters": [ "38000039" ] }
+		]
+	},
+            
+    {
+            "id": 11,
+            "name": "Event 11",
+            "boomboxEntry": "",
+            "eventEntryName": "",
+            "inboxEntryId": 1,
+            "startTime": "20161207T",
+            "endTime": "20161227T",
+            "showUpcoming": 1,
+            "functions": [
+                          { "name": "OfferBundle", "parameters": [ "38000026" ] },
+                          { "name": "OfferBundle", "parameters": [ "38000031" ] },
+                          { "name": "OfferBundle", "parameters": [ "38000040" ] },
+                          { "name": "OfferBundle", "parameters": [ "38000041" ] }
+                          ]
+    }
+	
+	
+]}
