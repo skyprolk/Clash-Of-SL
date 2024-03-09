@@ -7,10 +7,11 @@
     <ProjectGuid>{B508A4AB-A5CA-4680-9C10-DFA10CECE7BC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>csssceditor</RootNamespace>
+    <RootNamespace>CSSCE</RootNamespace>
     <AssemblyName>Clash SL SC Editor</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,7 +36,7 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>csssceditor.Program</StartupObject>
+    <StartupObject>CSSCE.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MathNet.Numerics">

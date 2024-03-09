@@ -8,7 +8,7 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace csssceditor
+namespace CSSCE
 {
     class ImageRgba4444 : ScImage
     {

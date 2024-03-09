@@ -1,4 +1,6 @@
-﻿namespace csssceditor
+﻿using System.Reflection;
+
+namespace CSSCE
 {
     partial class Form1
     {
@@ -241,7 +243,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 171);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Clash SL SC Editor\r\nVersion: 2.1\r\n#DARK TEAM\r\n\r\n";
+            this.label1.Text = $"Clash SL SC Editor\r\nVersion: {Assembly.GetExecutingAssembly().GetName().Version.ToString()}\r\n#DARK TEAM\r\n\r\n";
             // 
             // treeView1
             // 

@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using MathNet.Numerics.LinearAlgebra;
 
-namespace csssceditor
+namespace CSSCE
 {
     class Shape : ScObject
     {

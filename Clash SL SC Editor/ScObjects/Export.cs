@@ -9,7 +9,7 @@ using System.Drawing;
 //using System.Windows.Shapes;
 //using System.Windows.Media;
 
-namespace csssceditor
+namespace CSSCE
 {
     class Export : ScObject
     {

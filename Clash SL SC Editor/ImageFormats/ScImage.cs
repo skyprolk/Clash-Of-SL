@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Drawing;
 
-namespace csssceditor
+namespace CSSCE
 {
     class ScImage
     {

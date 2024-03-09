@@ -1,4 +1,4 @@
-﻿namespace csssceditor
+﻿namespace CSSCE
 {
     partial class ReplaceTexture
     {

@@ -11,7 +11,7 @@ using System.IO;
 using System.Diagnostics;
 //using System.Windows.Shapes;
 
-namespace csssceditor
+namespace CSSCE
 {
     public partial class Form1 : Form
     {

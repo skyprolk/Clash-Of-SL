@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace csssceditor
+namespace CSSCE
 {
     public partial class ReplaceTexture : Form
     {

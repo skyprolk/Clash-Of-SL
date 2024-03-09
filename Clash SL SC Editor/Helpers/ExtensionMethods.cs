@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
 
-namespace csssceditor
+namespace CSSCE
 {
     static class ExtensionMethods
     {
