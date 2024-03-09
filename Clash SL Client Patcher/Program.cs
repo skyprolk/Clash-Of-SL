@@ -84,7 +84,7 @@ namespace CSCP
                     {
                         Console.WriteLine("[CSCP] - Offset       : " + (Offset - 32) + " [0x" + (Offset - 32).ToString("X") + "]");
                         Console.WriteLine("[CSCP] - Detected Key (HEX)    : " + BitConverter.ToString(_file.ToList().GetRange((int)Offset - 32, 32).ToArray()).Replace("-", ""));
-                        Console.WriteLine("[CSCP] - Replace Public Key with COSS key? [Y/N]");
+                        Console.WriteLine("[CSCP] - Replace Public Key with CSS key? [Y/N]");
                         Console.Write("\n");
 
                         if (Console.ReadKey(false).Key == ConsoleKey.Y)
