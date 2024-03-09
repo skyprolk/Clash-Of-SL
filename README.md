@@ -37,7 +37,7 @@ You can create a coc private server using Clash of SL by following the instructi
 2. [Part #2 - WiFi Local ServerPart 2](https://youtu.be/jQA26Xg0vyE?si=LiAcuc27VoGAuG2R)
 3. [Part #3 - Internet Over Public Server](https://youtu.be/oW-jivCkq6Q?si=YeVvaiep7h3pXNVe)
 
-## HIRE ME
+## Hire Me
 Can't you make a coc private server by watching the above videos? Do not worry! I can do that for you :)
 - [CLICK HERE](https://www.fiverr.com/s/DbmmEo) to hire me on Fiverr.
 
@@ -51,8 +51,8 @@ You may find the following links useful!
 
 - [Apk Easy Tool Software](https://forum.xda-developers.com/t/tool-windows-apk-easy-tool-v1-59-2-2021-04-03.3333960/)
 
-- [Download Wamp Server](https://www.wampserver.com/en/)
+- [Wamp Server](https://www.wampserver.com/en/)
 
-- [Download Redis Server](https://redis.io/download)
+- [Redis Server](https://redis.io/download)
 
-- [Download Latest CSS Release](https://github.com/skyprolk/Clash-Of-SL/releases/)
+- [Latest CSS Release](https://github.com/skyprolk/Clash-Of-SL/releases/)
