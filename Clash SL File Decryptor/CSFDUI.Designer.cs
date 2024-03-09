@@ -1,4 +1,6 @@
-﻿namespace CSFD
+﻿using CSFD.Core;
+
+namespace CSFD
 {
     partial class CSFDUI
     {
@@ -203,7 +205,7 @@
             this.lblCopy.Name = "lblCopy";
             this.lblCopy.Size = new System.Drawing.Size(197, 38);
             this.lblCopy.TabIndex = 0;
-            this.lblCopy.Text = "Copyright © 2021 Sky Production\r\n All rights reserved";
+            this.lblCopy.Text = $"{Settings.GetCopyright()} Sky Production\r\n All rights reserved";
             this.lblCopy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CSFDUI

@@ -3,11 +3,11 @@ using System.Runtime.InteropServices;
 using System.Windows;
 
 [assembly: AssemblyTitle("Clash SL Server")]
-[assembly: AssemblyDescription("A .NET Clash Of SL Server Emulator")]
+[assembly: AssemblyDescription("A .NET Server")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Sky Production")]
 [assembly: AssemblyProduct("Clash SL Server")]
-[assembly: AssemblyCopyright("N/A")]
+[assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(true)]

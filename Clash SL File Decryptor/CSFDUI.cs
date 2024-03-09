@@ -23,7 +23,7 @@ namespace CSFD
         private void CSFDUI_Load(object sender, System.EventArgs e)
         {
             CSFDUI UI = (CSFDUI)Application.OpenForms["CSFDUI"];
-            UI.Text = "Clash SL File De/Compressor v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " - © 2021";
+            UI.Text = $"Clash SL File De/Compressor v{Settings.GetVersion()} - {Settings.GetCopyright()}";
             CheckerThread.Start();
         }
 
