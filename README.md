@@ -28,7 +28,7 @@ Clash of SL includes tools for various purposes.
 
 ## Videos
 Would you like to watch some videos about Clash of SL?
-- [Clash of SL Preview](https://www.mediafire.com/file/lboss6i0949vld1/Clash_SL_Server_Preview.mp4/file)
+- [Clash of SL Preview](https://youtu.be/VBjUW7VXnoE)
 - [Clash of SL Gameplay](https://www.mediafire.com/file/nzks2cwsbk0btfn/Gameplay_Video_-_480p.mp4/file)
 
 ## How?
