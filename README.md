@@ -34,7 +34,7 @@ Would you like to watch some videos about Clash of SL?
 ## How?
 You can create a coc private server using Clash of SL by following the instructions included in the videos below.
 1. [Part #1 - Gameplay](https://youtu.be/z_B_NoJkjfU?si=Qaeo7GQZQOCipjKP)
-2. [Part #2 - WiFi Local ServerPart 2](https://youtu.be/jQA26Xg0vyE?si=LiAcuc27VoGAuG2R)
+2. [Part #2 - WiFi Local Server](https://youtu.be/jQA26Xg0vyE?si=LiAcuc27VoGAuG2R)
 3. [Part #3 - Internet Over Public Server](https://youtu.be/oW-jivCkq6Q?si=YeVvaiep7h3pXNVe)
 
 ## Hire Me
